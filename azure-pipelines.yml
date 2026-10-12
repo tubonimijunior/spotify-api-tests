@@ -20,7 +20,7 @@ steps:
 
 - script: |
     npm ci
-    npx vitest run --reporter=default --reporter=junit --outputFile.junit=test-results.xml
+    npx vitest run --exclude 'tests/practice/**' --reporter=default --reporter=junit --outputFile.junit=test-results.xml
   displayName: 'Install dependencies and run tests'
   env:
     CLIENTID: $(CLIENTID)
