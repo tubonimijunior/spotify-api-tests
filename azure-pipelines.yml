@@ -19,10 +19,19 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install
-    npm test
-  displayName: 'npm install dependencies and run tests'
+    npm ci
+    npx vitest run --reporter=default --reporter=junit --outputFile.junit=test-results.xml
+  displayName: 'Install dependencies and run tests'
   env:
     CLIENTID: $(CLIENTID)
     CLIENTSECRET: $(CLIENTSECRET)
+
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testResultsFormat: JUnit
+    testResultsFiles: test-results.xml
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    testRunTitle: 'Vitest'
+
 

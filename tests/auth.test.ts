@@ -6,7 +6,7 @@ const client_id = process.env.CLIENTID
 const client_secret = process.env.CLIENTSECRET
 
 describe('Spotify API Authentication Tests', () => {
-    it('Should return a 200 status code for valid credentials', async () => {
+    it('AB#5 - Should return a 200 status code for valid credentials', async () => {
         if (client_id === undefined || client_secret === undefined) {
             throw new Error('client_id or client_secret is undefined');
         }
