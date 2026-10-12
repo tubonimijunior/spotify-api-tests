@@ -19,3 +19,7 @@ steps:
     npm install
     npm test
   displayName: 'npm install dependencies and run tests'
+  env:
+    CLIENTID: $(CLIENTID)
+    CLIENTSECRET: $(CLIENTSECRET)
+
