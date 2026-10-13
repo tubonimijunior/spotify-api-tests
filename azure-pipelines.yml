@@ -22,6 +22,10 @@ steps:
     npm ci
   displayName: 'Install dependencies'
 
+- script: 
+    npm run typecheck
+  displayName: 'Type check'
+
 - script:
     npx vitest run --exclude 'tests/practice/**' --reporter=default --reporter=junit --outputFile.junit=test-results.xml 
   displayName: 'run tests'
