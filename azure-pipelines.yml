@@ -18,10 +18,13 @@ steps:
     versionSpec: '20.x'
   displayName: 'Install Node.js'
 
-- script: |
+- script:
     npm ci
-    npx vitest run --exclude 'tests/practice/**' --reporter=default --reporter=junit --outputFile.junit=test-results.xml
-  displayName: 'Install dependencies and run tests'
+  displayName: 'Install dependencies'
+
+- script:
+    npx vitest run --exclude 'tests/practice/**' --reporter=default --reporter=junit --outputFile.junit=test-results.xml 
+  displayName: 'run tests'
   env:
     CLIENTID: $(CLIENTID)
     CLIENTSECRET: $(CLIENTSECRET)
@@ -33,5 +36,3 @@ steps:
     testResultsFiles: test-results.xml
     searchFolder: '$(System.DefaultWorkingDirectory)'
     testRunTitle: 'Vitest'
-
-

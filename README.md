@@ -66,32 +66,9 @@ tests/
     └── map.test.ts      # JavaScript array-method practice (map, filter, flatMap)
 ```
 
-## Test coverage
+## What's covered
 
-### Authentication — `POST https://accounts.spotify.com/api/token`
-
-| Scenario | Expected |
-| --- | --- |
-| Valid client ID and secret | `200`, returns `access_token` with `token_type: Bearer` |
-| Invalid client ID | `400`, `invalid_client` |
-| Invalid client secret | `400`, `invalid_client` |
-| Missing client ID and secret | `400`, `invalid_client` |
-
-### Artists — `GET /v1/artists/{id}`
-
-| Scenario | Expected |
-| --- | --- |
-| Invalid access token | `401`, `Missing/invalid/expired access token` |
-| No access token | `401` |
-| Valid token and existing artist (Radiohead) | `200`, correct `name`, `type` and `uri` |
-| Artist ID that does not exist | `404`, `Resource not found` |
-| Malformed artist ID | `400`, `Invalid base62 id` |
-
-### Search — `GET /v1/search`
-
-| Scenario | Expected |
-| --- | --- |
-| Search albums for "Tupac" | `200`, results include *All Eyez On Me* |
+Authentication, artist and search endpoints, including happy paths, invalid or missing tokens, and malformed or non-existent IDs. See the files in `tests/` for the full list.
 
 ## Notes and limitations
 
