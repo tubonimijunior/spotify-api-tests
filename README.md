@@ -2,6 +2,8 @@
 
 Automated API tests for the [Spotify Web API](https://developer.spotify.com/documentation/web-api), written in TypeScript and run with [Vitest](https://vitest.dev/).
 
+> Personal project, not accepting contributions.
+
 The tests authenticate using the **Client Credentials flow** and check status codes, error messages and response data for the authentication, artist and search endpoints.
 
 ## Tech stack
