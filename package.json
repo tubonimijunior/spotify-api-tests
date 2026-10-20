@@ -1,26 +1,29 @@
 {
-  "name": "spotify",
-  "type": "module",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "vitest run",
-    "typecheck": "tsc --noEmit",
-    "k6": "for f in performanceTests/*.ts; do k6 run \"$f\" || exit 1; done",
-    "k6:local": "set -a && . ./.env && set +a && npm run k6"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/k6": "^2.3.0",
-    "@types/node": "^26.6.4",
-    "dotenv": "^18.0.5",
-    "typescript": "^7.0.2",
-    "vitest": "^5.0.3"
-  },
-  "dependencies": {
-    "axios": "^1.20.0"
-  }
+    "name": "spotify",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "vitest run",
+        "typecheck": "tsc --noEmit",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "k6": "for f in performanceTests/*.ts; do k6 run \"$f\" || exit 1; done",
+        "k6:local": "set -a && . ./.env && set +a && npm run k6"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/k6": "^2.3.0",
+        "@types/node": "^26.6.4",
+        "dotenv": "^18.0.5",
+        "prettier": "^3.9.10",
+        "typescript": "^7.0.2",
+        "vitest": "^5.0.3"
+    },
+    "dependencies": {
+        "axios": "^1.20.0"
+    }
 }
