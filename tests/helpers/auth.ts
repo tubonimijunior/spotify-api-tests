@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import { authUrl } from './config.js';
+import { authUrl } from './config.ts';
 
 
 

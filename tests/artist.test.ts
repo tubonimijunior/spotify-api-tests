@@ -1,11 +1,9 @@
-import { getToken } from './helpers/auth.js';
+import { getToken } from './helpers/auth.ts';
 import { describe, it, expect, beforeAll } from 'vitest';
-import type { components } from './types/spotify.js';
-import { spotifyUrl} from './helpers/config.js'
+import type { components } from './types/spotify.ts';
+import { spotifyUrl } from './helpers/config.ts'
 
 const artistId = '4Z8W4fKeB5YxbusRsdQVPb';
-// const url = `https://api.spotify.com/v1/`;
-
 
 const ArtistData = {
     'name': 'Radiohead',
@@ -39,9 +37,14 @@ describe('GET Artists details', () => {
 
         expect(response.status).toBe(401);
         const apiResponse = await response.json();
-        expect(apiResponse.error.message).toEqual('Missing/invalid/expired access token');// brittle
-        expect(apiResponse.error.message).toBeTruthy();
         expect(apiResponse.error.status).toBe(401);
+        expect(apiResponse).toMatchObject(
+            {
+                "error": {
+                    "message": expect.any(String),
+                    "status": 401,
+                }
+            })
     })
 
     it('Should return a 200 and Artist detail when user has access and the artist ID exists', async (test) => {
@@ -49,7 +52,6 @@ describe('GET Artists details', () => {
             test.skip();
         }
         const response = await fetch(`${spotifyUrl}/artists/${artistId}`, {
-            // 'Authorization': { `Type': 'Bearer ${token}` }
             headers: { 'Authorization': `Bearer ${token}` }
         });
         expect(response.status).toBe(200);
@@ -65,12 +67,16 @@ describe('GET Artists details', () => {
         const response = await fetch(`${spotifyUrl}/artists/${artistId}`, {
             headers: { 'Authorization': `Bearer ${token}` }
         });
-        expect(response.status).toBe(404);
+        expect(response.status).toBe(404); //HTTP status line
         const apiResponse = await response.json();
-        expect(apiResponse.error.status).toEqual(404);
-        expect(apiResponse.error.message).toEqual('Resource not found');// brittle
-        // expect(apiResponse.error.message).toBeFalsy();
-    })
+        expect(apiResponse).toMatchObject
+            ({
+                "error": {
+                    "message": expect.any(String),
+                    "status": 404,
+                }
+            })
+    });
 
     it('Should return and error for a malformed test ID', async () => {
         const artistId = 'not-a-valid-id';
@@ -78,9 +84,14 @@ describe('GET Artists details', () => {
         const response = await fetch(`${spotifyUrl}/artists/${artistId}`, {
             headers: { 'Authorization': `Bearer ${token}` }
         });
-        expect(response.status).toBe(400);
+        expect(response.status).toBe(400); //HTTP status line
         const apiResponse = await response.json();
-        expect(apiResponse.error.status).toEqual(400);
-        expect(apiResponse.error.message).toEqual('Invalid base62 id');
+        expect(apiResponse).toMatchObject(
+            {
+                "error": {
+                    "message": expect.any(String),
+                    "status": 400,
+                }
+            })
     });
 });
