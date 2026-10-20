@@ -28,7 +28,7 @@ describe('GET Artists details', () => {
         expect(apiResponse).toMatchObject({
             error: {
                 message: expect.any(String),
-                Status: 401,
+                status: 401,
             },
         });
     });
