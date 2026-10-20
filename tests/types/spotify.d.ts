@@ -4,7 +4,7 @@
  */
 
 export interface paths {
-    "/albums/{id}": {
+    '/albums/{id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -15,7 +15,7 @@ export interface paths {
          * Get Album
          * @description Get Spotify catalog information for a single album.
          */
-        get: operations["get-an-album"];
+        get: operations['get-an-album'];
         put?: never;
         post?: never;
         delete?: never;
@@ -24,7 +24,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/albums": {
+    '/albums': {
         parameters: {
             query?: never;
             header?: never;
@@ -36,7 +36,7 @@ export interface paths {
          * @deprecated
          * @description Get Spotify catalog information for multiple albums identified by their Spotify IDs.
          */
-        get: operations["get-multiple-albums"];
+        get: operations['get-multiple-albums'];
         put?: never;
         post?: never;
         delete?: never;
@@ -45,7 +45,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/albums/{id}/tracks": {
+    '/albums/{id}/tracks': {
         parameters: {
             query?: never;
             header?: never;
@@ -57,7 +57,7 @@ export interface paths {
          * @description Get Spotify catalog information about an album’s tracks.
          *     Optional parameters can be used to limit the number of tracks returned.
          */
-        get: operations["get-an-albums-tracks"];
+        get: operations['get-an-albums-tracks'];
         put?: never;
         post?: never;
         delete?: never;
@@ -66,7 +66,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/artists/{id}": {
+    '/artists/{id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -77,7 +77,7 @@ export interface paths {
          * Get Artist
          * @description Get Spotify catalog information for a single artist identified by their unique Spotify ID.
          */
-        get: operations["get-an-artist"];
+        get: operations['get-an-artist'];
         put?: never;
         post?: never;
         delete?: never;
@@ -86,7 +86,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/artists": {
+    '/artists': {
         parameters: {
             query?: never;
             header?: never;
@@ -98,7 +98,7 @@ export interface paths {
          * @deprecated
          * @description Get Spotify catalog information for several artists based on their Spotify IDs.
          */
-        get: operations["get-multiple-artists"];
+        get: operations['get-multiple-artists'];
         put?: never;
         post?: never;
         delete?: never;
@@ -107,7 +107,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/artists/{id}/albums": {
+    '/artists/{id}/albums': {
         parameters: {
             query?: never;
             header?: never;
@@ -118,7 +118,7 @@ export interface paths {
          * Get Artist's Albums
          * @description Get Spotify catalog information about an artist's albums.
          */
-        get: operations["get-an-artists-albums"];
+        get: operations['get-an-artists-albums'];
         put?: never;
         post?: never;
         delete?: never;
@@ -127,7 +127,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/artists/{id}/top-tracks": {
+    '/artists/{id}/top-tracks': {
         parameters: {
             query?: never;
             header?: never;
@@ -139,7 +139,7 @@ export interface paths {
          * @deprecated
          * @description Get Spotify catalog information about an artist's top tracks by country.
          */
-        get: operations["get-an-artists-top-tracks"];
+        get: operations['get-an-artists-top-tracks'];
         put?: never;
         post?: never;
         delete?: never;
@@ -148,7 +148,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/artists/{id}/related-artists": {
+    '/artists/{id}/related-artists': {
         parameters: {
             query?: never;
             header?: never;
@@ -160,7 +160,7 @@ export interface paths {
          * @deprecated
          * @description Get Spotify catalog information about artists similar to a given artist. Similarity is based on analysis of the Spotify community's listening history.
          */
-        get: operations["get-an-artists-related-artists"];
+        get: operations['get-an-artists-related-artists'];
         put?: never;
         post?: never;
         delete?: never;
@@ -169,7 +169,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/shows/{id}": {
+    '/shows/{id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -181,7 +181,7 @@ export interface paths {
          * @description Get Spotify catalog information for a single show identified by its
          *     unique Spotify ID.
          */
-        get: operations["get-a-show"];
+        get: operations['get-a-show'];
         put?: never;
         post?: never;
         delete?: never;
@@ -190,7 +190,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/shows": {
+    '/shows': {
         parameters: {
             query?: never;
             header?: never;
@@ -202,7 +202,7 @@ export interface paths {
          * @deprecated
          * @description Get Spotify catalog information for several shows based on their Spotify IDs.
          */
-        get: operations["get-multiple-shows"];
+        get: operations['get-multiple-shows'];
         put?: never;
         post?: never;
         delete?: never;
@@ -211,7 +211,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/shows/{id}/episodes": {
+    '/shows/{id}/episodes': {
         parameters: {
             query?: never;
             header?: never;
@@ -222,7 +222,7 @@ export interface paths {
          * Get Show Episodes
          * @description Get Spotify catalog information about an show’s episodes. Optional parameters can be used to limit the number of episodes returned.
          */
-        get: operations["get-a-shows-episodes"];
+        get: operations['get-a-shows-episodes'];
         put?: never;
         post?: never;
         delete?: never;
@@ -231,7 +231,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/episodes/{id}": {
+    '/episodes/{id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -243,7 +243,7 @@ export interface paths {
          * @description Get Spotify catalog information for a single episode identified by its
          *     unique Spotify ID.
          */
-        get: operations["get-an-episode"];
+        get: operations['get-an-episode'];
         put?: never;
         post?: never;
         delete?: never;
@@ -252,7 +252,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/episodes": {
+    '/episodes': {
         parameters: {
             query?: never;
             header?: never;
@@ -264,7 +264,7 @@ export interface paths {
          * @deprecated
          * @description Get Spotify catalog information for several episodes based on their Spotify IDs.
          */
-        get: operations["get-multiple-episodes"];
+        get: operations['get-multiple-episodes'];
         put?: never;
         post?: never;
         delete?: never;
@@ -273,7 +273,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/audiobooks/{id}": {
+    '/audiobooks/{id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -284,7 +284,7 @@ export interface paths {
          * Get an Audiobook
          * @description Get Spotify catalog information for a single audiobook. Audiobooks are only available within the US, UK, Canada, Ireland, New Zealand and Australia markets.
          */
-        get: operations["get-an-audiobook"];
+        get: operations['get-an-audiobook'];
         put?: never;
         post?: never;
         delete?: never;
@@ -293,7 +293,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/audiobooks": {
+    '/audiobooks': {
         parameters: {
             query?: never;
             header?: never;
@@ -305,7 +305,7 @@ export interface paths {
          * @deprecated
          * @description Get Spotify catalog information for several audiobooks identified by their Spotify IDs. Audiobooks are only available within the US, UK, Canada, Ireland, New Zealand and Australia markets.
          */
-        get: operations["get-multiple-audiobooks"];
+        get: operations['get-multiple-audiobooks'];
         put?: never;
         post?: never;
         delete?: never;
@@ -314,7 +314,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/audiobooks/{id}/chapters": {
+    '/audiobooks/{id}/chapters': {
         parameters: {
             query?: never;
             header?: never;
@@ -325,7 +325,7 @@ export interface paths {
          * Get Audiobook Chapters
          * @description Get Spotify catalog information about an audiobook's chapters. Audiobooks are only available within the US, UK, Canada, Ireland, New Zealand and Australia markets.
          */
-        get: operations["get-audiobook-chapters"];
+        get: operations['get-audiobook-chapters'];
         put?: never;
         post?: never;
         delete?: never;
@@ -334,7 +334,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/audiobooks": {
+    '/me/audiobooks': {
         parameters: {
             query?: never;
             header?: never;
@@ -345,7 +345,7 @@ export interface paths {
          * Get User's Saved Audiobooks
          * @description Get a list of the audiobooks saved in the current Spotify user's 'Your Music' library.
          */
-        get: operations["get-users-saved-audiobooks"];
+        get: operations['get-users-saved-audiobooks'];
         /**
          * Save Audiobooks for Current User
          * @deprecated
@@ -353,7 +353,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Save Items to Library](/documentation/web-api/reference/save-library-items) instead.
          */
-        put: operations["save-audiobooks-user"];
+        put: operations['save-audiobooks-user'];
         post?: never;
         /**
          * Remove User's Saved Audiobooks
@@ -362,13 +362,13 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Remove Items from Library](/documentation/web-api/reference/remove-library-items) instead.
          */
-        delete: operations["remove-audiobooks-user"];
+        delete: operations['remove-audiobooks-user'];
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/me/audiobooks/contains": {
+    '/me/audiobooks/contains': {
         parameters: {
             query?: never;
             header?: never;
@@ -382,7 +382,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Check User's Saved Items](/documentation/web-api/reference/check-library-contains) instead.
          */
-        get: operations["check-users-saved-audiobooks"];
+        get: operations['check-users-saved-audiobooks'];
         put?: never;
         post?: never;
         delete?: never;
@@ -391,7 +391,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/chapters/{id}": {
+    '/chapters/{id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -402,7 +402,7 @@ export interface paths {
          * Get a Chapter
          * @description Get Spotify catalog information for a single audiobook chapter. Chapters are only available within the US, UK, Canada, Ireland, New Zealand and Australia markets.
          */
-        get: operations["get-a-chapter"];
+        get: operations['get-a-chapter'];
         put?: never;
         post?: never;
         delete?: never;
@@ -411,7 +411,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/chapters": {
+    '/chapters': {
         parameters: {
             query?: never;
             header?: never;
@@ -423,7 +423,7 @@ export interface paths {
          * @deprecated
          * @description Get Spotify catalog information for several audiobook chapters identified by their Spotify IDs. Chapters are only available within the US, UK, Canada, Ireland, New Zealand and Australia markets.
          */
-        get: operations["get-several-chapters"];
+        get: operations['get-several-chapters'];
         put?: never;
         post?: never;
         delete?: never;
@@ -432,7 +432,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/tracks/{id}": {
+    '/tracks/{id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -444,7 +444,7 @@ export interface paths {
          * @description Get Spotify catalog information for a single track identified by its
          *     unique Spotify ID.
          */
-        get: operations["get-track"];
+        get: operations['get-track'];
         put?: never;
         post?: never;
         delete?: never;
@@ -453,7 +453,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/tracks": {
+    '/tracks': {
         parameters: {
             query?: never;
             header?: never;
@@ -465,7 +465,7 @@ export interface paths {
          * @deprecated
          * @description Get Spotify catalog information for multiple tracks based on their Spotify IDs.
          */
-        get: operations["get-several-tracks"];
+        get: operations['get-several-tracks'];
         put?: never;
         post?: never;
         delete?: never;
@@ -474,7 +474,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/search": {
+    '/search': {
         parameters: {
             query?: never;
             header?: never;
@@ -486,7 +486,7 @@ export interface paths {
          * @description Get Spotify catalog information about albums, artists, playlists, tracks, shows, episodes or audiobooks
          *     that match a keyword string. Audiobooks are only available within the US, UK, Canada, Ireland, New Zealand and Australia markets.
          */
-        get: operations["search"];
+        get: operations['search'];
         put?: never;
         post?: never;
         delete?: never;
@@ -495,7 +495,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me": {
+    '/me': {
         parameters: {
             query?: never;
             header?: never;
@@ -507,7 +507,7 @@ export interface paths {
          * @description Get detailed profile information about the current user (including the
          *     current user's username).
          */
-        get: operations["get-current-users-profile"];
+        get: operations['get-current-users-profile'];
         put?: never;
         post?: never;
         delete?: never;
@@ -516,7 +516,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/playlists/{playlist_id}": {
+    '/playlists/{playlist_id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -527,13 +527,13 @@ export interface paths {
          * Get Playlist
          * @description Get a playlist owned by a Spotify user.
          */
-        get: operations["get-playlist"];
+        get: operations['get-playlist'];
         /**
          * Change Playlist Details
          * @description Change a playlist's name and public/private state. (The user must, of
          *     course, own the playlist.)
          */
-        put: operations["change-playlist-details"];
+        put: operations['change-playlist-details'];
         post?: never;
         delete?: never;
         options?: never;
@@ -541,7 +541,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/playlists/{playlist_id}/tracks": {
+    '/playlists/{playlist_id}/tracks': {
         parameters: {
             query?: never;
             header?: never;
@@ -555,7 +555,7 @@ export interface paths {
          *
          *     Get full details of the items of a playlist owned by a Spotify user.
          */
-        get: operations["get-playlists-tracks"];
+        get: operations['get-playlists-tracks'];
         /**
          * Update Playlist Items [DEPRECATED]
          * @deprecated
@@ -569,7 +569,7 @@ export interface paths {
          *     **Note**: Replace and reorder are mutually exclusive operations which share the same endpoint, but have different parameters.
          *     These operations can't be applied together in a single request.
          */
-        put: operations["reorder-or-replace-playlists-tracks"];
+        put: operations['reorder-or-replace-playlists-tracks'];
         /**
          * Add Items to Playlist [DEPRECATED]
          * @deprecated
@@ -577,7 +577,7 @@ export interface paths {
          *
          *     Add one or more items to a user's playlist.
          */
-        post: operations["add-tracks-to-playlist"];
+        post: operations['add-tracks-to-playlist'];
         /**
          * Remove Playlist Items [DEPRECATED]
          * @deprecated
@@ -585,13 +585,13 @@ export interface paths {
          *
          *     Remove one or more items from a user's playlist.
          */
-        delete: operations["remove-tracks-playlist"];
+        delete: operations['remove-tracks-playlist'];
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/playlists/{playlist_id}/items": {
+    '/playlists/{playlist_id}/items': {
         parameters: {
             query?: never;
             header?: never;
@@ -604,7 +604,7 @@ export interface paths {
          *
          *     **Note**: This endpoint is only accessible for playlists owned by the current user or playlists the user is a collaborator of. A `403 Forbidden` status code will be returned if the user is neither the owner nor a collaborator of the playlist.
          */
-        get: operations["get-playlists-items"];
+        get: operations['get-playlists-items'];
         /**
          * Update Playlist Items
          * @description Either reorder or replace items in a playlist depending on the request's parameters.
@@ -615,23 +615,23 @@ export interface paths {
          *     **Note**: Replace and reorder are mutually exclusive operations which share the same endpoint, but have different parameters.
          *     These operations can't be applied together in a single request.
          */
-        put: operations["reorder-or-replace-playlists-items"];
+        put: operations['reorder-or-replace-playlists-items'];
         /**
          * Add Items to Playlist
          * @description Add one or more items to a user's playlist.
          */
-        post: operations["add-items-to-playlist"];
+        post: operations['add-items-to-playlist'];
         /**
          * Remove Playlist Items
          * @description Remove one or more items from a user's playlist.
          */
-        delete: operations["remove-items-playlist"];
+        delete: operations['remove-items-playlist'];
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/me/playlists": {
+    '/me/playlists': {
         parameters: {
             query?: never;
             header?: never;
@@ -643,7 +643,7 @@ export interface paths {
          * @description Get a list of the playlists owned or followed by the current Spotify
          *     user.
          */
-        get: operations["get-a-list-of-current-users-playlists"];
+        get: operations['get-a-list-of-current-users-playlists'];
         put?: never;
         /**
          * Create Playlist
@@ -651,14 +651,14 @@ export interface paths {
          *     you [add tracks](/documentation/web-api/reference/add-tracks-to-playlist).)
          *     Each user is generally limited to a maximum of 11000 playlists.
          */
-        post: operations["create-playlist"];
+        post: operations['create-playlist'];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/me/library": {
+    '/me/library': {
         parameters: {
             query?: never;
             header?: never;
@@ -670,19 +670,19 @@ export interface paths {
          * Save Items to Library
          * @description Add one or more items to the current user's library. Accepts Spotify URIs for tracks, albums, episodes, shows, audiobooks, users, and playlists.
          */
-        put: operations["save-library-items"];
+        put: operations['save-library-items'];
         post?: never;
         /**
          * Remove Items from Library
          * @description Remove one or more items from the current user's library. Accepts Spotify URIs for tracks, albums, episodes, shows, audiobooks, users, and playlists.
          */
-        delete: operations["remove-library-items"];
+        delete: operations['remove-library-items'];
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/me/library/contains": {
+    '/me/library/contains': {
         parameters: {
             query?: never;
             header?: never;
@@ -693,7 +693,7 @@ export interface paths {
          * Check User's Saved Items
          * @description Check if one or more items are already saved in the current user's library. Accepts Spotify URIs for tracks, albums, episodes, shows, audiobooks, artists, users, and playlists.
          */
-        get: operations["check-library-contains"];
+        get: operations['check-library-contains'];
         put?: never;
         post?: never;
         delete?: never;
@@ -702,7 +702,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/albums": {
+    '/me/albums': {
         parameters: {
             query?: never;
             header?: never;
@@ -713,7 +713,7 @@ export interface paths {
          * Get User's Saved Albums
          * @description Get a list of the albums saved in the current Spotify user's 'Your Music' library.
          */
-        get: operations["get-users-saved-albums"];
+        get: operations['get-users-saved-albums'];
         /**
          * Save Albums for Current User
          * @deprecated
@@ -721,7 +721,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Save Items to Library](/documentation/web-api/reference/save-library-items) instead.
          */
-        put: operations["save-albums-user"];
+        put: operations['save-albums-user'];
         post?: never;
         /**
          * Remove Users' Saved Albums
@@ -730,13 +730,13 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Remove Items from Library](/documentation/web-api/reference/remove-library-items) instead.
          */
-        delete: operations["remove-albums-user"];
+        delete: operations['remove-albums-user'];
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/me/albums/contains": {
+    '/me/albums/contains': {
         parameters: {
             query?: never;
             header?: never;
@@ -750,7 +750,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Check User's Saved Items](/documentation/web-api/reference/check-library-contains) instead.
          */
-        get: operations["check-users-saved-albums"];
+        get: operations['check-users-saved-albums'];
         put?: never;
         post?: never;
         delete?: never;
@@ -759,7 +759,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/tracks": {
+    '/me/tracks': {
         parameters: {
             query?: never;
             header?: never;
@@ -770,7 +770,7 @@ export interface paths {
          * Get User's Saved Tracks
          * @description Get a list of the songs saved in the current Spotify user's 'Your Music' library.
          */
-        get: operations["get-users-saved-tracks"];
+        get: operations['get-users-saved-tracks'];
         /**
          * Save Tracks for Current User
          * @deprecated
@@ -778,7 +778,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Save Items to Library](/documentation/web-api/reference/save-library-items) instead.
          */
-        put: operations["save-tracks-user"];
+        put: operations['save-tracks-user'];
         post?: never;
         /**
          * Remove User's Saved Tracks
@@ -787,13 +787,13 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Remove Items from Library](/documentation/web-api/reference/remove-library-items) instead.
          */
-        delete: operations["remove-tracks-user"];
+        delete: operations['remove-tracks-user'];
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/me/tracks/contains": {
+    '/me/tracks/contains': {
         parameters: {
             query?: never;
             header?: never;
@@ -807,7 +807,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Check User's Saved Items](/documentation/web-api/reference/check-library-contains) instead.
          */
-        get: operations["check-users-saved-tracks"];
+        get: operations['check-users-saved-tracks'];
         put?: never;
         post?: never;
         delete?: never;
@@ -816,7 +816,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/episodes": {
+    '/me/episodes': {
         parameters: {
             query?: never;
             header?: never;
@@ -827,7 +827,7 @@ export interface paths {
          * Get User's Saved Episodes
          * @description Get a list of the episodes saved in the current Spotify user's library.
          */
-        get: operations["get-users-saved-episodes"];
+        get: operations['get-users-saved-episodes'];
         /**
          * Save Episodes for Current User
          * @deprecated
@@ -835,7 +835,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Save Items to Library](/documentation/web-api/reference/save-library-items) instead.
          */
-        put: operations["save-episodes-user"];
+        put: operations['save-episodes-user'];
         post?: never;
         /**
          * Remove User's Saved Episodes
@@ -844,13 +844,13 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Remove Items from Library](/documentation/web-api/reference/remove-library-items) instead.
          */
-        delete: operations["remove-episodes-user"];
+        delete: operations['remove-episodes-user'];
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/me/episodes/contains": {
+    '/me/episodes/contains': {
         parameters: {
             query?: never;
             header?: never;
@@ -864,7 +864,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Check User's Saved Items](/documentation/web-api/reference/check-library-contains) instead.
          */
-        get: operations["check-users-saved-episodes"];
+        get: operations['check-users-saved-episodes'];
         put?: never;
         post?: never;
         delete?: never;
@@ -873,7 +873,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/shows": {
+    '/me/shows': {
         parameters: {
             query?: never;
             header?: never;
@@ -884,7 +884,7 @@ export interface paths {
          * Get User's Saved Shows
          * @description Get a list of shows saved in the current Spotify user's library. Optional parameters can be used to limit the number of shows returned.
          */
-        get: operations["get-users-saved-shows"];
+        get: operations['get-users-saved-shows'];
         /**
          * Save Shows for Current User
          * @deprecated
@@ -892,7 +892,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Save Items to Library](/documentation/web-api/reference/save-library-items) instead.
          */
-        put: operations["save-shows-user"];
+        put: operations['save-shows-user'];
         post?: never;
         /**
          * Remove User's Saved Shows
@@ -901,13 +901,13 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Remove Items from Library](/documentation/web-api/reference/remove-library-items) instead.
          */
-        delete: operations["remove-shows-user"];
+        delete: operations['remove-shows-user'];
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/me/shows/contains": {
+    '/me/shows/contains': {
         parameters: {
             query?: never;
             header?: never;
@@ -921,7 +921,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Check User's Saved Items](/documentation/web-api/reference/check-library-contains) instead.
          */
-        get: operations["check-users-saved-shows"];
+        get: operations['check-users-saved-shows'];
         put?: never;
         post?: never;
         delete?: never;
@@ -930,7 +930,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/top/{type}": {
+    '/me/top/{type}': {
         parameters: {
             query?: never;
             header?: never;
@@ -941,7 +941,7 @@ export interface paths {
          * Get User's Top Items
          * @description Get the current user's top artists or tracks based on calculated affinity.
          */
-        get: operations["get-users-top-artists-and-tracks"];
+        get: operations['get-users-top-artists-and-tracks'];
         put?: never;
         post?: never;
         delete?: never;
@@ -950,7 +950,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/users/{user_id}": {
+    '/users/{user_id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -962,7 +962,7 @@ export interface paths {
          * @deprecated
          * @description Get public profile information about a Spotify user.
          */
-        get: operations["get-users-profile"];
+        get: operations['get-users-profile'];
         put?: never;
         post?: never;
         delete?: never;
@@ -971,7 +971,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/users/{user_id}/playlists": {
+    '/users/{user_id}/playlists': {
         parameters: {
             query?: never;
             header?: never;
@@ -983,7 +983,7 @@ export interface paths {
          * @deprecated
          * @description Get a list of the playlists owned or followed by a Spotify user.
          */
-        get: operations["get-list-users-playlists"];
+        get: operations['get-list-users-playlists'];
         put?: never;
         /**
          * Create Playlist for user
@@ -994,14 +994,14 @@ export interface paths {
          *     you [add tracks](/documentation/web-api/reference/add-tracks-to-playlist).)
          *     Each user is generally limited to a maximum of 11000 playlists.
          */
-        post: operations["create-playlist-for-user"];
+        post: operations['create-playlist-for-user'];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/playlists/{playlist_id}/followers": {
+    '/playlists/{playlist_id}/followers': {
         parameters: {
             query?: never;
             header?: never;
@@ -1016,7 +1016,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Save Items to Library](/documentation/web-api/reference/save-library-items) instead.
          */
-        put: operations["follow-playlist"];
+        put: operations['follow-playlist'];
         post?: never;
         /**
          * Unfollow Playlist
@@ -1025,13 +1025,13 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Remove Items from Library](/documentation/web-api/reference/remove-library-items) instead.
          */
-        delete: operations["unfollow-playlist"];
+        delete: operations['unfollow-playlist'];
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/browse/featured-playlists": {
+    '/browse/featured-playlists': {
         parameters: {
             query?: never;
             header?: never;
@@ -1043,7 +1043,7 @@ export interface paths {
          * @deprecated
          * @description Get a list of Spotify featured playlists (shown, for example, on a Spotify player's 'Browse' tab).
          */
-        get: operations["get-featured-playlists"];
+        get: operations['get-featured-playlists'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1052,7 +1052,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/browse/categories": {
+    '/browse/categories': {
         parameters: {
             query?: never;
             header?: never;
@@ -1064,7 +1064,7 @@ export interface paths {
          * @deprecated
          * @description Get a list of categories used to tag items in Spotify (on, for example, the Spotify player’s “Browse” tab).
          */
-        get: operations["get-categories"];
+        get: operations['get-categories'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1073,7 +1073,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/browse/categories/{category_id}": {
+    '/browse/categories/{category_id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -1085,7 +1085,7 @@ export interface paths {
          * @deprecated
          * @description Get a single category used to tag items in Spotify (on, for example, the Spotify player’s “Browse” tab).
          */
-        get: operations["get-a-category"];
+        get: operations['get-a-category'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1094,7 +1094,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/browse/categories/{category_id}/playlists": {
+    '/browse/categories/{category_id}/playlists': {
         parameters: {
             query?: never;
             header?: never;
@@ -1106,7 +1106,7 @@ export interface paths {
          * @deprecated
          * @description Get a list of Spotify playlists tagged with a particular category.
          */
-        get: operations["get-a-categories-playlists"];
+        get: operations['get-a-categories-playlists'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1115,7 +1115,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/playlists/{playlist_id}/images": {
+    '/playlists/{playlist_id}/images': {
         parameters: {
             query?: never;
             header?: never;
@@ -1126,12 +1126,12 @@ export interface paths {
          * Get Playlist Cover Image
          * @description Get the current image associated with a specific playlist.
          */
-        get: operations["get-playlist-cover"];
+        get: operations['get-playlist-cover'];
         /**
          * Add Custom Playlist Cover Image
          * @description Replace the image used to represent a specific playlist.
          */
-        put: operations["upload-custom-playlist-cover"];
+        put: operations['upload-custom-playlist-cover'];
         post?: never;
         delete?: never;
         options?: never;
@@ -1139,7 +1139,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/browse/new-releases": {
+    '/browse/new-releases': {
         parameters: {
             query?: never;
             header?: never;
@@ -1151,7 +1151,7 @@ export interface paths {
          * @deprecated
          * @description Get a list of new album releases featured in Spotify (shown, for example, on a Spotify player’s “Browse” tab).
          */
-        get: operations["get-new-releases"];
+        get: operations['get-new-releases'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1160,7 +1160,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/following": {
+    '/me/following': {
         parameters: {
             query?: never;
             header?: never;
@@ -1171,7 +1171,7 @@ export interface paths {
          * Get Followed Artists
          * @description Get the current user's followed artists.
          */
-        get: operations["get-followed"];
+        get: operations['get-followed'];
         /**
          * Follow Artists or Users
          * @deprecated
@@ -1179,7 +1179,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Save Items to Library](/documentation/web-api/reference/save-library-items) instead.
          */
-        put: operations["follow-artists-users"];
+        put: operations['follow-artists-users'];
         post?: never;
         /**
          * Unfollow Artists or Users
@@ -1188,13 +1188,13 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Remove Items from Library](/documentation/web-api/reference/remove-library-items) instead.
          */
-        delete: operations["unfollow-artists-users"];
+        delete: operations['unfollow-artists-users'];
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/me/following/contains": {
+    '/me/following/contains': {
         parameters: {
             query?: never;
             header?: never;
@@ -1208,7 +1208,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Check User's Saved Items](/documentation/web-api/reference/check-library-contains) instead.
          */
-        get: operations["check-current-user-follows"];
+        get: operations['check-current-user-follows'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1217,7 +1217,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/playlists/{playlist_id}/followers/contains": {
+    '/playlists/{playlist_id}/followers/contains': {
         parameters: {
             query?: never;
             header?: never;
@@ -1231,7 +1231,7 @@ export interface paths {
          *
          *     **Note:** This endpoint is deprecated. Use [Check User's Saved Items](/documentation/web-api/reference/check-library-contains) instead.
          */
-        get: operations["check-if-user-follows-playlist"];
+        get: operations['check-if-user-follows-playlist'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1240,7 +1240,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/audio-features": {
+    '/audio-features': {
         parameters: {
             query?: never;
             header?: never;
@@ -1252,7 +1252,7 @@ export interface paths {
          * @deprecated
          * @description Get audio features for multiple tracks based on their Spotify IDs.
          */
-        get: operations["get-several-audio-features"];
+        get: operations['get-several-audio-features'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1261,7 +1261,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/audio-features/{id}": {
+    '/audio-features/{id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -1274,7 +1274,7 @@ export interface paths {
          * @description Get audio feature information for a single track identified by its unique
          *     Spotify ID.
          */
-        get: operations["get-audio-features"];
+        get: operations['get-audio-features'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1283,7 +1283,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/audio-analysis/{id}": {
+    '/audio-analysis/{id}': {
         parameters: {
             query?: never;
             header?: never;
@@ -1295,7 +1295,7 @@ export interface paths {
          * @deprecated
          * @description Get a low-level audio analysis for a track in the Spotify catalog. The audio analysis describes the track’s structure and musical content, including rhythm, pitch, and timbre.
          */
-        get: operations["get-audio-analysis"];
+        get: operations['get-audio-analysis'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1304,7 +1304,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/recommendations": {
+    '/recommendations': {
         parameters: {
             query?: never;
             header?: never;
@@ -1318,7 +1318,7 @@ export interface paths {
          *
          *     For artists and tracks that are very new or obscure there might not be enough data to generate a list of tracks.
          */
-        get: operations["get-recommendations"];
+        get: operations['get-recommendations'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1327,7 +1327,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/recommendations/available-genre-seeds": {
+    '/recommendations/available-genre-seeds': {
         parameters: {
             query?: never;
             header?: never;
@@ -1339,7 +1339,7 @@ export interface paths {
          * @deprecated
          * @description Retrieve a list of available genres seed parameter values for [recommendations](/documentation/web-api/reference/get-recommendations).
          */
-        get: operations["get-recommendation-genres"];
+        get: operations['get-recommendation-genres'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1348,7 +1348,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/player": {
+    '/me/player': {
         parameters: {
             query?: never;
             header?: never;
@@ -1359,12 +1359,12 @@ export interface paths {
          * Get Playback State
          * @description Get information about the user’s current playback state, including track or episode, progress, and active device.
          */
-        get: operations["get-information-about-the-users-current-playback"];
+        get: operations['get-information-about-the-users-current-playback'];
         /**
          * Transfer Playback
          * @description Transfer playback to a new device and optionally begin playback. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
          */
-        put: operations["transfer-a-users-playback"];
+        put: operations['transfer-a-users-playback'];
         post?: never;
         delete?: never;
         options?: never;
@@ -1372,7 +1372,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/player/devices": {
+    '/me/player/devices': {
         parameters: {
             query?: never;
             header?: never;
@@ -1383,7 +1383,7 @@ export interface paths {
          * Get Available Devices
          * @description Get information about a user’s available Spotify Connect devices. Some device models are not supported and will not be listed in the API response.
          */
-        get: operations["get-a-users-available-devices"];
+        get: operations['get-a-users-available-devices'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1392,7 +1392,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/player/currently-playing": {
+    '/me/player/currently-playing': {
         parameters: {
             query?: never;
             header?: never;
@@ -1403,7 +1403,7 @@ export interface paths {
          * Get Currently Playing Track
          * @description Get the object currently being played on the user's Spotify account.
          */
-        get: operations["get-the-users-currently-playing-track"];
+        get: operations['get-the-users-currently-playing-track'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1412,7 +1412,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/player/play": {
+    '/me/player/play': {
         parameters: {
             query?: never;
             header?: never;
@@ -1424,7 +1424,7 @@ export interface paths {
          * Start/Resume Playback
          * @description Start a new context or resume current playback on the user's active device. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
          */
-        put: operations["start-a-users-playback"];
+        put: operations['start-a-users-playback'];
         post?: never;
         delete?: never;
         options?: never;
@@ -1432,7 +1432,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/player/pause": {
+    '/me/player/pause': {
         parameters: {
             query?: never;
             header?: never;
@@ -1444,7 +1444,7 @@ export interface paths {
          * Pause Playback
          * @description Pause playback on the user's account. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
          */
-        put: operations["pause-a-users-playback"];
+        put: operations['pause-a-users-playback'];
         post?: never;
         delete?: never;
         options?: never;
@@ -1452,7 +1452,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/player/next": {
+    '/me/player/next': {
         parameters: {
             query?: never;
             header?: never;
@@ -1465,14 +1465,14 @@ export interface paths {
          * Skip To Next
          * @description Skips to next track in the user’s queue. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
          */
-        post: operations["skip-users-playback-to-next-track"];
+        post: operations['skip-users-playback-to-next-track'];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/me/player/previous": {
+    '/me/player/previous': {
         parameters: {
             query?: never;
             header?: never;
@@ -1485,14 +1485,14 @@ export interface paths {
          * Skip To Previous
          * @description Skips to previous track in the user’s queue. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
          */
-        post: operations["skip-users-playback-to-previous-track"];
+        post: operations['skip-users-playback-to-previous-track'];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/me/player/seek": {
+    '/me/player/seek': {
         parameters: {
             query?: never;
             header?: never;
@@ -1504,7 +1504,7 @@ export interface paths {
          * Seek To Position
          * @description Seeks to the given position in the user’s currently playing track. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
          */
-        put: operations["seek-to-position-in-currently-playing-track"];
+        put: operations['seek-to-position-in-currently-playing-track'];
         post?: never;
         delete?: never;
         options?: never;
@@ -1512,7 +1512,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/player/repeat": {
+    '/me/player/repeat': {
         parameters: {
             query?: never;
             header?: never;
@@ -1524,7 +1524,7 @@ export interface paths {
          * Set Repeat Mode
          * @description Set the repeat mode for the user's playback. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
          */
-        put: operations["set-repeat-mode-on-users-playback"];
+        put: operations['set-repeat-mode-on-users-playback'];
         post?: never;
         delete?: never;
         options?: never;
@@ -1532,7 +1532,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/player/volume": {
+    '/me/player/volume': {
         parameters: {
             query?: never;
             header?: never;
@@ -1544,7 +1544,7 @@ export interface paths {
          * Set Playback Volume
          * @description Set the volume for the user’s current playback device. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
          */
-        put: operations["set-volume-for-users-playback"];
+        put: operations['set-volume-for-users-playback'];
         post?: never;
         delete?: never;
         options?: never;
@@ -1552,7 +1552,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/player/shuffle": {
+    '/me/player/shuffle': {
         parameters: {
             query?: never;
             header?: never;
@@ -1564,7 +1564,7 @@ export interface paths {
          * Toggle Playback Shuffle
          * @description Toggle shuffle on or off for user’s playback. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
          */
-        put: operations["toggle-shuffle-for-users-playback"];
+        put: operations['toggle-shuffle-for-users-playback'];
         post?: never;
         delete?: never;
         options?: never;
@@ -1572,7 +1572,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/player/recently-played": {
+    '/me/player/recently-played': {
         parameters: {
             query?: never;
             header?: never;
@@ -1584,7 +1584,7 @@ export interface paths {
          * @description Get tracks from the current user's recently played tracks.
          *     _**Note**: Currently doesn't support podcast episodes._
          */
-        get: operations["get-recently-played"];
+        get: operations['get-recently-played'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1593,7 +1593,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/me/player/queue": {
+    '/me/player/queue': {
         parameters: {
             query?: never;
             header?: never;
@@ -1604,20 +1604,20 @@ export interface paths {
          * Get the User's Queue
          * @description Get the list of objects that make up the user's queue.
          */
-        get: operations["get-queue"];
+        get: operations['get-queue'];
         put?: never;
         /**
          * Add Item to Playback Queue
          * @description Add an item to be played next in the user's current playback queue. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
          */
-        post: operations["add-to-queue"];
+        post: operations['add-to-queue'];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/markets": {
+    '/markets': {
         parameters: {
             query?: never;
             header?: never;
@@ -1629,7 +1629,7 @@ export interface paths {
          * @deprecated
          * @description Get the list of markets where Spotify is available.
          */
-        get: operations["get-available-markets"];
+        get: operations['get-available-markets'];
         put?: never;
         post?: never;
         delete?: never;
@@ -1644,7 +1644,7 @@ export interface components {
     schemas: {
         LinkedTrackObject: {
             /** @description Known external URLs for this track. */
-            external_urls?: components["schemas"]["ExternalUrlObject"];
+            external_urls?: components['schemas']['ExternalUrlObject'];
             /** @description A link to the Web API endpoint providing full details of the track. */
             href?: string;
             /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the track. */
@@ -1672,7 +1672,7 @@ export interface components {
              *     Additional reasons may be added in the future.
              * @enum {string}
              */
-            reason?: "market" | "product" | "explicit";
+            reason?: 'market' | 'product' | 'explicit';
         };
         EpisodeRestrictionObject: {
             /**
@@ -1701,12 +1701,12 @@ export interface components {
         };
         ArtistObject: {
             /** @description Known external URLs for this artist. */
-            external_urls?: components["schemas"]["ExternalUrlObject"];
+            external_urls?: components['schemas']['ExternalUrlObject'];
             /**
              * @deprecated
              * @description Information about the followers of the artist.
              */
-            followers?: components["schemas"]["FollowersObject"];
+            followers?: components['schemas']['FollowersObject'];
             /**
              * @deprecated
              * @description A list of the genres the artist is associated with. If not yet classified, the array is empty.
@@ -1721,7 +1721,7 @@ export interface components {
             /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the artist. */
             id?: string;
             /** @description Images of the artist in various sizes, widest first. */
-            images?: components["schemas"]["ImageObject"][];
+            images?: components['schemas']['ImageObject'][];
             /** @description The name of the artist. */
             name?: string;
             /**
@@ -1734,13 +1734,13 @@ export interface components {
              *      (enum property replaced by openapi-typescript)
              * @enum {string}
              */
-            type: "ArtistObject";
+            type: 'ArtistObject';
             /** @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the artist. */
             uri?: string;
         };
         SimplifiedArtistObject: {
             /** @description Known external URLs for this artist. */
-            external_urls?: components["schemas"]["ExternalUrlObject"];
+            external_urls?: components['schemas']['ExternalUrlObject'];
             /** @description A link to the Web API endpoint providing full details of the artist. */
             href?: string;
             /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the artist. */
@@ -1751,20 +1751,20 @@ export interface components {
              * @description The object type.
              * @enum {string}
              */
-            type?: "artist";
+            type?: 'artist';
             /** @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the artist. */
             uri?: string;
         };
         PlayHistoryObject: {
             /** @description The track the user listened to. */
-            track?: components["schemas"]["TrackObject"];
+            track?: components['schemas']['TrackObject'];
             /**
              * Format: date-time
              * @description The date and time the track was played.
              */
             played_at?: string;
             /** @description The context the track was played from. */
-            context?: components["schemas"]["ContextObject"];
+            context?: components['schemas']['ContextObject'];
         };
         PlaylistTrackObject: {
             /**
@@ -1773,32 +1773,41 @@ export interface components {
              */
             added_at?: string;
             /** @description The Spotify user who added the track or episode. _**Note**: some very old playlists may return `null` in this field._ */
-            added_by?: components["schemas"]["PlaylistUserObject"];
+            added_by?: components['schemas']['PlaylistUserObject'];
             /** @description Whether this track or episode is a [local file](/documentation/web-api/concepts/playlists/#local-files) or not. */
             is_local?: boolean;
             /** @description Information about the track or episode. */
-            item?: components["schemas"]["TrackObject"] | components["schemas"]["EpisodeObject"];
+            item?:
+                | components['schemas']['TrackObject']
+                | components['schemas']['EpisodeObject'];
             /**
              * @deprecated
              * @description **Deprecated:** Use `item` instead. Information about the track or episode.
              */
-            track?: components["schemas"]["TrackObject"] | components["schemas"]["EpisodeObject"];
+            track?:
+                | components['schemas']['TrackObject']
+                | components['schemas']['EpisodeObject'];
         };
         QueueObject: {
             /** @description The currently playing track or episode. Can be `null`. */
-            currently_playing?: components["schemas"]["TrackObject"] | components["schemas"]["EpisodeObject"];
+            currently_playing?:
+                | components['schemas']['TrackObject']
+                | components['schemas']['EpisodeObject'];
             /** @description The tracks or episodes in the queue. Can be empty. */
-            queue?: (components["schemas"]["TrackObject"] | components["schemas"]["EpisodeObject"])[];
+            queue?: (
+                | components['schemas']['TrackObject']
+                | components['schemas']['EpisodeObject']
+            )[];
         };
         CurrentlyPlayingContextObject: {
             /** @description The device that is currently active. */
-            device?: components["schemas"]["DeviceObject"];
+            device?: components['schemas']['DeviceObject'];
             /** @description off, track, context */
             repeat_state?: string;
             /** @description If shuffle is on or off. */
             shuffle_state?: boolean;
             /** @description A Context Object. Can be `null`. */
-            context?: components["schemas"]["ContextObject"];
+            context?: components['schemas']['ContextObject'];
             /** @description Unix Millisecond Timestamp when playback state was last changed (play, pause, skip, scrub, new song, etc.). */
             timestamp?: number;
             /** @description Progress into the currently playing track or episode. Can be `null`. */
@@ -1806,11 +1815,13 @@ export interface components {
             /** @description If something is currently playing, return `true`. */
             is_playing?: boolean;
             /** @description The currently playing track or episode. Can be `null`. */
-            item?: components["schemas"]["TrackObject"] | components["schemas"]["EpisodeObject"];
+            item?:
+                | components['schemas']['TrackObject']
+                | components['schemas']['EpisodeObject'];
             /** @description The object type of the currently playing item. Can be one of `track`, `episode`, `ad` or `unknown`. */
             currently_playing_type?: string;
             /** @description Allows to update the user interface based on which playback actions are available within the current context. */
-            actions?: components["schemas"]["DisallowsObject"];
+            actions?: components['schemas']['DisallowsObject'];
         };
         DisallowsObject: {
             /** @description Interrupting playback. Optional field. */
@@ -1862,20 +1873,20 @@ export interface components {
              * @deprecated
              * @description The user's explicit content settings. _This field is only available when the current user has granted access to the [user-read-private](/documentation/web-api/concepts/scopes/#list-of-scopes) scope._
              */
-            explicit_content?: components["schemas"]["ExplicitContentSettingsObject"];
+            explicit_content?: components['schemas']['ExplicitContentSettingsObject'];
             /** @description Known external URLs for this user. */
-            external_urls?: components["schemas"]["ExternalUrlObject"];
+            external_urls?: components['schemas']['ExternalUrlObject'];
             /**
              * @deprecated
              * @description Information about the followers of the user.
              */
-            followers?: components["schemas"]["FollowersObject"];
+            followers?: components['schemas']['FollowersObject'];
             /** @description A link to the Web API endpoint for this user. */
             href?: string;
             /** @description The [Spotify user ID](/documentation/web-api/concepts/spotify-uris-ids) for the user. Do not use this field for account linking — use `account_id` instead, which is immutable. */
             id?: string;
             /** @description The user's profile image. */
-            images?: components["schemas"]["ImageObject"][];
+            images?: components['schemas']['ImageObject'][];
             /**
              * @deprecated
              * @description The user's Spotify subscription level: "premium", "free", etc. (The subscription level "open" can be considered the same as "free".) _This field is only available when the current user has granted access to the [user-read-private](/documentation/web-api/concepts/scopes/#list-of-scopes) scope._
@@ -1890,23 +1901,23 @@ export interface components {
             /** @description The name displayed on the user's profile. `null` if not available. */
             display_name?: string | null;
             /** @description Known public external URLs for this user. */
-            external_urls?: components["schemas"]["ExternalUrlObject"];
+            external_urls?: components['schemas']['ExternalUrlObject'];
             /**
              * @deprecated
              * @description Information about the followers of this user.
              */
-            followers?: components["schemas"]["FollowersObject"];
+            followers?: components['schemas']['FollowersObject'];
             /** @description A link to the Web API endpoint for this user. */
             href?: string;
             /** @description The [Spotify user ID](/documentation/web-api/concepts/spotify-uris-ids) for this user. */
             id?: string;
             /** @description The user's profile image. */
-            images?: components["schemas"]["ImageObject"][];
+            images?: components['schemas']['ImageObject'][];
             /**
              * @description The object type.
              * @enum {string}
              */
-            type?: "user";
+            type?: 'user';
             /** @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for this user. */
             uri?: string;
         };
@@ -1991,26 +2002,26 @@ export interface components {
                  * @example 201.13705
                  */
                 start_of_fade_out?: number;
-                loudness?: components["schemas"]["Loudness"];
-                tempo?: components["schemas"]["Tempo"];
+                loudness?: components['schemas']['Loudness'];
+                tempo?: components['schemas']['Tempo'];
                 /**
                  * @description The confidence, from 0.0 to 1.0, of the reliability of the `tempo`.
                  * @example 0.73
                  */
                 tempo_confidence?: number;
-                time_signature?: components["schemas"]["TimeSignature"];
+                time_signature?: components['schemas']['TimeSignature'];
                 /**
                  * @description The confidence, from 0.0 to 1.0, of the reliability of the `time_signature`.
                  * @example 0.994
                  */
                 time_signature_confidence?: number;
-                key?: components["schemas"]["Key"];
+                key?: components['schemas']['Key'];
                 /**
                  * @description The confidence, from 0.0 to 1.0, of the reliability of the `key`.
                  * @example 0.408
                  */
                 key_confidence?: number;
-                mode?: components["schemas"]["Mode"];
+                mode?: components['schemas']['Mode'];
                 /**
                  * @description The confidence, from 0.0 to 1.0, of the reliability of the `mode`.
                  * @example 0.485
@@ -2046,15 +2057,15 @@ export interface components {
                 rhythm_version?: number;
             };
             /** @description The time intervals of the bars throughout the track. A bar (or measure) is a segment of time defined as a given number of beats. */
-            bars?: components["schemas"]["TimeIntervalObject"][];
+            bars?: components['schemas']['TimeIntervalObject'][];
             /** @description The time intervals of beats throughout the track. A beat is the basic time unit of a piece of music; for example, each tick of a metronome. Beats are typically multiples of tatums. */
-            beats?: components["schemas"]["TimeIntervalObject"][];
+            beats?: components['schemas']['TimeIntervalObject'][];
             /** @description Sections are defined by large variations in rhythm or timbre, e.g. chorus, verse, bridge, guitar solo, etc. Each section contains its own descriptions of tempo, key, mode, time_signature, and loudness. */
-            sections?: components["schemas"]["SectionObject"][];
+            sections?: components['schemas']['SectionObject'][];
             /** @description Each segment contains a roughly conisistent sound throughout its duration. */
-            segments?: components["schemas"]["SegmentObject"][];
+            segments?: components['schemas']['SegmentObject'][];
             /** @description A tatum represents the lowest regular pulse train that a listener intuitively infers from the timing of perceived musical events (segments). */
-            tatums?: components["schemas"]["TimeIntervalObject"][];
+            tatums?: components['schemas']['TimeIntervalObject'][];
         };
         TimeIntervalObject: {
             /**
@@ -2124,7 +2135,7 @@ export interface components {
              * @example 0.471
              */
             mode_confidence?: number;
-            time_signature?: components["schemas"]["TimeSignature"];
+            time_signature?: components['schemas']['TimeSignature'];
             /**
              * @description The confidence, from 0.0 to 1.0, of the reliability of the `time_signature`. Sections with time signature changes may correspond to low values in this field.
              * @example 1
@@ -2262,23 +2273,23 @@ export interface components {
              * @example 0.00686
              */
             instrumentalness?: number;
-            key?: components["schemas"]["Key"];
+            key?: components['schemas']['Key'];
             /**
              * Format: float
              * @description Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.
              * @example 0.0866
              */
             liveness?: number;
-            loudness?: components["schemas"]["Loudness"];
-            mode?: components["schemas"]["Mode"];
+            loudness?: components['schemas']['Loudness'];
+            mode?: components['schemas']['Mode'];
             /**
              * Format: float
              * @description Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks.
              * @example 0.0556
              */
             speechiness?: number;
-            tempo?: components["schemas"]["Tempo"];
-            time_signature?: components["schemas"]["TimeSignature"];
+            tempo?: components['schemas']['Tempo'];
+            time_signature?: components['schemas']['TimeSignature'];
             /**
              * @description A link to the Web API endpoint providing full details of the track.
              * @example https://api.spotify.com/v1/tracks/2takcwOaAZWiXQijPHIx7B
@@ -2288,7 +2299,7 @@ export interface components {
              * @description The object type.
              * @enum {string}
              */
-            type?: "audio_features";
+            type?: 'audio_features';
             /**
              * @description The Spotify URI for the track.
              * @example spotify:track:2takcwOaAZWiXQijPHIx7B
@@ -2303,7 +2314,7 @@ export interface components {
         };
         SimplifiedTrackObject: {
             /** @description The artists who performed the track. Each artist object includes a link in `href` to more detailed information about the artist. */
-            artists?: components["schemas"]["SimplifiedArtistObject"][];
+            artists?: components['schemas']['SimplifiedArtistObject'][];
             /**
              * @deprecated
              * @description A list of the countries in which the track can be played, identified by their [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code.
@@ -2316,7 +2327,7 @@ export interface components {
             /** @description Whether or not the track has explicit lyrics ( `true` = yes it does; `false` = no it does not OR unknown). */
             explicit?: boolean;
             /** @description External URLs for this track. */
-            external_urls?: components["schemas"]["ExternalUrlObject"];
+            external_urls?: components['schemas']['ExternalUrlObject'];
             /** @description A link to the Web API endpoint providing full details of the track. */
             href?: string;
             /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the track. */
@@ -2327,9 +2338,9 @@ export interface components {
              * @deprecated
              * @description Part of the response when [Track Relinking](/documentation/web-api/concepts/track-relinking/) is applied and is only part of the response if the track linking, in fact, exists. The requested track has been replaced with a different track. The track in the `linked_from` object contains information about the originally requested track.
              */
-            linked_from?: components["schemas"]["LinkedTrackObject"];
+            linked_from?: components['schemas']['LinkedTrackObject'];
             /** @description Included in the response when a content restriction is applied. */
-            restrictions?: components["schemas"]["TrackRestrictionObject"];
+            restrictions?: components['schemas']['TrackRestrictionObject'];
             /** @description The name of the track. */
             name?: string;
             /**
@@ -2387,15 +2398,15 @@ export interface components {
             /** @description URL to the next page of items. ( `null` if none) */
             next?: string;
             /** @description The cursors used to find the next set of items. */
-            cursors?: components["schemas"]["CursorObject"];
+            cursors?: components['schemas']['CursorObject'];
             /** @description The total number of items available to return. */
             total?: number;
         };
-        CursorPagingPlayHistoryObject: components["schemas"]["CursorPagingObject"] & {
-            items?: components["schemas"]["PlayHistoryObject"][];
+        CursorPagingPlayHistoryObject: components['schemas']['CursorPagingObject'] & {
+            items?: components['schemas']['PlayHistoryObject'][];
         };
-        CursorPagingSimplifiedArtistObject: components["schemas"]["CursorPagingObject"] & {
-            items?: components["schemas"]["ArtistObject"][];
+        CursorPagingSimplifiedArtistObject: components['schemas']['CursorPagingObject'] & {
+            items?: components['schemas']['ArtistObject'][];
         };
         PagingObject: {
             /**
@@ -2429,8 +2440,8 @@ export interface components {
              */
             total: number;
         };
-        PagingPlaylistObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["SimplifiedPlaylistObject"][];
+        PagingPlaylistObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['SimplifiedPlaylistObject'][];
         };
         PagingFeaturedPlaylistObject: {
             /**
@@ -2438,55 +2449,55 @@ export interface components {
              * @example Popular Playlists
              */
             message?: string;
-            playlists?: components["schemas"]["PagingPlaylistObject"];
+            playlists?: components['schemas']['PagingPlaylistObject'];
         };
-        PagingArtistDiscographyAlbumObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["ArtistDiscographyAlbumObject"][];
+        PagingArtistDiscographyAlbumObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['ArtistDiscographyAlbumObject'][];
         };
-        PagingSimplifiedAlbumObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["SimplifiedAlbumObject"][];
+        PagingSimplifiedAlbumObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['SimplifiedAlbumObject'][];
         };
-        PagingSavedAlbumObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["SavedAlbumObject"][];
+        PagingSavedAlbumObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['SavedAlbumObject'][];
         };
-        PagingSimplifiedTrackObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["SimplifiedTrackObject"][];
+        PagingSimplifiedTrackObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['SimplifiedTrackObject'][];
         };
-        PagingSavedTrackObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["SavedTrackObject"][];
+        PagingSavedTrackObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['SavedTrackObject'][];
         };
-        PagingTrackObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["TrackObject"][];
+        PagingTrackObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['TrackObject'][];
         };
-        PagingPlaylistTrackObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["PlaylistTrackObject"][];
+        PagingPlaylistTrackObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['PlaylistTrackObject'][];
         };
-        PagingSimplifiedShowObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["SimplifiedShowObject"][];
+        PagingSimplifiedShowObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['SimplifiedShowObject'][];
         };
-        PagingSavedShowObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["SavedShowObject"][];
+        PagingSavedShowObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['SavedShowObject'][];
         };
-        PagingSimplifiedEpisodeObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["SimplifiedEpisodeObject"][];
+        PagingSimplifiedEpisodeObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['SimplifiedEpisodeObject'][];
         };
-        PagingSavedEpisodeObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["SavedEpisodeObject"][];
+        PagingSavedEpisodeObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['SavedEpisodeObject'][];
         };
-        PagingSimplifiedAudiobookObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["SimplifiedAudiobookObject"][];
+        PagingSimplifiedAudiobookObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['SimplifiedAudiobookObject'][];
         };
-        PagingArtistObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["ArtistObject"][];
+        PagingArtistObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['ArtistObject'][];
         };
-        PagingSimplifiedChapterObject: components["schemas"]["PagingObject"] & {
-            items?: components["schemas"]["SimplifiedChapterObject"][];
+        PagingSimplifiedChapterObject: components['schemas']['PagingObject'] & {
+            items?: components['schemas']['SimplifiedChapterObject'][];
         };
         RecommendationsObject: {
             /** @description An array of recommendation seed objects. */
-            seeds: components["schemas"]["RecommendationSeedObject"][];
+            seeds: components['schemas']['RecommendationSeedObject'][];
             /** @description An array of track object (simplified) ordered according to the parameters supplied. */
-            tracks: components["schemas"]["TrackObject"][];
+            tracks: components['schemas']['TrackObject'][];
         };
         RecommendationSeedObject: {
             /** @description The number of tracks available after min\_\* and max\_\* filters have been applied. */
@@ -2511,7 +2522,7 @@ export interface components {
              */
             added_at?: string;
             /** @description Information about the album. */
-            album?: components["schemas"]["AlbumObject"];
+            album?: components['schemas']['AlbumObject'];
         };
         SavedTrackObject: {
             /**
@@ -2522,7 +2533,7 @@ export interface components {
              */
             added_at?: string;
             /** @description Information about the track. */
-            track?: components["schemas"]["TrackObject"];
+            track?: components['schemas']['TrackObject'];
         };
         SavedEpisodeObject: {
             /**
@@ -2532,7 +2543,7 @@ export interface components {
              */
             added_at?: string;
             /** @description Information about the episode. */
-            episode?: components["schemas"]["EpisodeObject"];
+            episode?: components['schemas']['EpisodeObject'];
         };
         SavedShowObject: {
             /**
@@ -2543,7 +2554,7 @@ export interface components {
              */
             added_at?: string;
             /** @description Information about the show. */
-            show?: components["schemas"]["SimplifiedShowObject"];
+            show?: components['schemas']['SimplifiedShowObject'];
         };
         PlaylistObject: {
             /** @description `true` if the owner allows other users to modify the playlist. */
@@ -2551,28 +2562,28 @@ export interface components {
             /** @description The playlist description. _Only returned for modified, verified playlists, otherwise_ `null`. */
             description?: string | null;
             /** @description Known external URLs for this playlist. */
-            external_urls?: components["schemas"]["ExternalUrlObject"];
+            external_urls?: components['schemas']['ExternalUrlObject'];
             /** @description A link to the Web API endpoint providing full details of the playlist. */
             href?: string;
             /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the playlist. */
             id?: string;
             /** @description Images for the playlist. The array may be empty or contain up to three images. The images are returned by size in descending order. See [Working with Playlists](/documentation/web-api/concepts/playlists). _**Note**: If returned, the source URL for the image (`url`) is temporary and will expire in less than a day._ */
-            images?: components["schemas"]["ImageObject"][];
+            images?: components['schemas']['ImageObject'][];
             /** @description The name of the playlist. */
             name?: string;
             /** @description The user who owns the playlist */
-            owner?: components["schemas"]["PlaylistOwnerObject"];
+            owner?: components['schemas']['PlaylistOwnerObject'];
             /** @description The playlist's public/private status (if it is added to the user's profile): `true` the playlist is public, `false` the playlist is private, `null` the playlist status is not relevant. For more about public/private status, see [Working with Playlists](/documentation/web-api/concepts/playlists) */
             public?: boolean;
             /** @description The version identifier for the current playlist. Can be supplied in other requests to target a specific playlist version */
             snapshot_id?: string;
             /** @description The items of the playlist. _**Note**: This field is only available for playlists owned by the current user or playlists the user is a collaborator of._ */
-            items?: components["schemas"]["PagingPlaylistTrackObject"];
+            items?: components['schemas']['PagingPlaylistTrackObject'];
             /**
              * @deprecated
              * @description **Deprecated:** Use `items` instead. The tracks of the playlist.
              */
-            tracks?: components["schemas"]["PagingPlaylistTrackObject"];
+            tracks?: components['schemas']['PagingPlaylistTrackObject'];
             /** @description The object type: "playlist" */
             type?: string;
             /** @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the playlist. */
@@ -2584,28 +2595,28 @@ export interface components {
             /** @description The playlist description. _Only returned for modified, verified playlists, otherwise_ `null`. */
             description?: string;
             /** @description Known external URLs for this playlist. */
-            external_urls?: components["schemas"]["ExternalUrlObject"];
+            external_urls?: components['schemas']['ExternalUrlObject'];
             /** @description A link to the Web API endpoint providing full details of the playlist. */
             href?: string;
             /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the playlist. */
             id?: string;
             /** @description Images for the playlist. The array may be empty or contain up to three images. The images are returned by size in descending order. See [Working with Playlists](/documentation/web-api/concepts/playlists). _**Note**: If returned, the source URL for the image (`url`) is temporary and will expire in less than a day._ */
-            images?: components["schemas"]["ImageObject"][];
+            images?: components['schemas']['ImageObject'][];
             /** @description The name of the playlist. */
             name?: string;
             /** @description The user who owns the playlist */
-            owner?: components["schemas"]["PlaylistOwnerObject"];
+            owner?: components['schemas']['PlaylistOwnerObject'];
             /** @description The playlist's public/private status (if it is added to the user's profile): `true` the playlist is public, `false` the playlist is private, `null` the playlist status is not relevant. For more about public/private status, see [Working with Playlists](/documentation/web-api/concepts/playlists) */
             public?: boolean;
             /** @description The version identifier for the current playlist. Can be supplied in other requests to target a specific playlist version */
             snapshot_id?: string;
             /** @description A collection containing a link ( `href` ) to the Web API endpoint where full details of the playlist's items can be retrieved, along with the `total` number of items in the playlist. Note, a track object may be `null`. This can happen if a track is no longer available. */
-            items?: components["schemas"]["PlaylistTracksRefObject"];
+            items?: components['schemas']['PlaylistTracksRefObject'];
             /**
              * @deprecated
              * @description **Deprecated:** Use `items` instead. A collection containing a link ( `href` ) to the Web API endpoint where full details of the playlist's tracks can be retrieved, along with the `total` number of tracks in the playlist. Note, a track object may be `null`. This can happen if a track is no longer available.
              */
-            tracks?: components["schemas"]["PlaylistTracksRefObject"];
+            tracks?: components['schemas']['PlaylistTracksRefObject'];
             /** @description The object type: "playlist" */
             type?: string;
             /** @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the playlist. */
@@ -2619,7 +2630,7 @@ export interface components {
         };
         PlaylistUserObject: {
             /** @description Known public external URLs for this user. */
-            external_urls?: components["schemas"]["ExternalUrlObject"];
+            external_urls?: components['schemas']['ExternalUrlObject'];
             /** @description A link to the Web API endpoint for this user. */
             href?: string;
             /** @description The [Spotify user ID](/documentation/web-api/concepts/spotify-uris-ids) for this user. */
@@ -2628,11 +2639,11 @@ export interface components {
              * @description The object type.
              * @enum {string}
              */
-            type?: "user";
+            type?: 'user';
             /** @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for this user. */
             uri?: string;
         };
-        PlaylistOwnerObject: components["schemas"]["PlaylistUserObject"] & {
+        PlaylistOwnerObject: components['schemas']['PlaylistUserObject'] & {
             /** @description The name displayed on the user's profile. `null` if not available. */
             display_name?: string | null;
         };
@@ -2640,7 +2651,7 @@ export interface components {
             /** @description A link to the Web API endpoint returning full details of the category. */
             href: string;
             /** @description The category icon, in various sizes. */
-            icons: components["schemas"]["ImageObject"][];
+            icons: components['schemas']['ImageObject'][];
             /**
              * @description The [Spotify category ID](/documentation/web-api/concepts/spotify-uris-ids) of the category.
              * @example equal
@@ -2654,9 +2665,9 @@ export interface components {
         };
         TrackObject: {
             /** @description The album on which the track appears. The album object includes a link in `href` to full information about the album. */
-            album?: components["schemas"]["SimplifiedAlbumObject"];
+            album?: components['schemas']['SimplifiedAlbumObject'];
             /** @description The artists who performed the track. Each artist object includes a link in `href` to more detailed information about the artist. */
-            artists?: components["schemas"]["SimplifiedArtistObject"][];
+            artists?: components['schemas']['SimplifiedArtistObject'][];
             /**
              * @deprecated
              * @description A list of the countries in which the track can be played, identified by their [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code.
@@ -2669,9 +2680,9 @@ export interface components {
             /** @description Whether or not the track has explicit lyrics ( `true` = yes it does; `false` = no it does not OR unknown). */
             explicit?: boolean;
             /** @description Known external IDs for the track. */
-            external_ids?: components["schemas"]["ExternalIdObject"];
+            external_ids?: components['schemas']['ExternalIdObject'];
             /** @description Known external URLs for this track. */
-            external_urls?: components["schemas"]["ExternalUrlObject"];
+            external_urls?: components['schemas']['ExternalUrlObject'];
             /** @description A link to the Web API endpoint providing full details of the track. */
             href?: string;
             /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the track. */
@@ -2684,7 +2695,7 @@ export interface components {
              */
             linked_from?: Record<string, never>;
             /** @description Included in the response when a content restriction is applied. */
-            restrictions?: components["schemas"]["TrackRestrictionObject"];
+            restrictions?: components['schemas']['TrackRestrictionObject'];
             /** @description The name of the track. */
             name?: string;
             /**
@@ -2704,23 +2715,24 @@ export interface components {
              *      (enum property replaced by openapi-typescript)
              * @enum {string}
              */
-            type: "TrackObject";
+            type: 'TrackObject';
             /** @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the track. */
             uri?: string;
             /** @description Whether or not the track is from a local file. */
             is_local?: boolean;
         };
-        EpisodeObject: components["schemas"]["EpisodeBase"] & {
+        EpisodeObject: components['schemas']['EpisodeBase'] & {
             /** @description The show on which the episode belongs. */
-            show: components["schemas"]["SimplifiedShowObject"];
+            show: components['schemas']['SimplifiedShowObject'];
         } & {
             /**
              * @description discriminator enum property added by openapi-typescript
              * @enum {string}
              */
-            type: "EpisodeObject";
+            type: 'EpisodeObject';
         };
-        SimplifiedEpisodeObject: components["schemas"]["EpisodeBase"] & Record<string, never>;
+        SimplifiedEpisodeObject: components['schemas']['EpisodeBase'] &
+            Record<string, never>;
         EpisodeBase: {
             /**
              * @deprecated
@@ -2746,7 +2758,7 @@ export interface components {
             /** @description Whether or not the episode has explicit content (true = yes it does; false = no it does not OR unknown). */
             explicit: boolean;
             /** @description External URLs for this episode. */
-            external_urls: components["schemas"]["ExternalUrlObject"];
+            external_urls: components['schemas']['ExternalUrlObject'];
             /**
              * @description A link to the Web API endpoint providing full details of the episode.
              * @example https://api.spotify.com/v1/episodes/5Xt5DXGzch68nYYamXrNxZ
@@ -2758,7 +2770,7 @@ export interface components {
              */
             id: string;
             /** @description The cover art for the episode in various sizes, widest first. */
-            images: components["schemas"]["ImageObject"][];
+            images: components['schemas']['ImageObject'][];
             /** @description True if the episode is hosted outside of Spotify's CDN. */
             is_externally_hosted: boolean;
             /** @description True if the episode is playable in the given market. Otherwise false. */
@@ -2792,21 +2804,21 @@ export interface components {
              * @example day
              * @enum {string}
              */
-            release_date_precision: "year" | "month" | "day";
+            release_date_precision: 'year' | 'month' | 'day';
             /** @description The user's most recent position in the episode. Set if the supplied access token is a user token and has the scope 'user-read-playback-position'. */
-            resume_point?: components["schemas"]["ResumePointObject"];
+            resume_point?: components['schemas']['ResumePointObject'];
             /**
              * @description The object type.
              * @enum {string}
              */
-            type: "episode";
+            type: 'episode';
             /**
              * @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the episode.
              * @example spotify:episode:0zLhl3WsOCQHbe1BPTiHgr
              */
             uri: string;
             /** @description Included in the response when a content restriction is applied. */
-            restrictions?: components["schemas"]["EpisodeRestrictionObject"];
+            restrictions?: components['schemas']['EpisodeRestrictionObject'];
         };
         ResumePointObject: {
             /** @description Whether or not the episode has been fully played by the user. */
@@ -2821,7 +2833,7 @@ export interface components {
              */
             available_markets: string[];
             /** @description The copyright statements of the show. */
-            copyrights: components["schemas"]["CopyrightObject"][];
+            copyrights: components['schemas']['CopyrightObject'][];
             /** @description A description of the show. HTML tags are stripped away from this field, use `html_description` field in case HTML tags are needed. */
             description: string;
             /** @description A description of the show. This field may contain HTML tags. */
@@ -2829,13 +2841,13 @@ export interface components {
             /** @description Whether or not the show has explicit content (true = yes it does; false = no it does not OR unknown). */
             explicit: boolean;
             /** @description External URLs for this show. */
-            external_urls: components["schemas"]["ExternalUrlObject"];
+            external_urls: components['schemas']['ExternalUrlObject'];
             /** @description A link to the Web API endpoint providing full details of the show. */
             href: string;
             /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the show. */
             id: string;
             /** @description The cover art for the show in various sizes, widest first. */
-            images: components["schemas"]["ImageObject"][];
+            images: components['schemas']['ImageObject'][];
             /** @description True if all of the shows episodes are hosted outside of Spotify's CDN. This field might be `null` in some cases. */
             is_externally_hosted: boolean;
             /** @description A list of the languages used in the show, identified by their [ISO 639](https://en.wikipedia.org/wiki/ISO_639) code. */
@@ -2853,27 +2865,28 @@ export interface components {
              * @description The object type.
              * @enum {string}
              */
-            type: "show";
+            type: 'show';
             /** @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the show. */
             uri: string;
             /** @description The total number of episodes in the show. */
             total_episodes: number;
         };
-        ShowObject: components["schemas"]["ShowBase"] & {
+        ShowObject: components['schemas']['ShowBase'] & {
             /** @description The episodes of the show. */
-            episodes: components["schemas"]["PagingSimplifiedEpisodeObject"];
+            episodes: components['schemas']['PagingSimplifiedEpisodeObject'];
         };
-        SimplifiedShowObject: components["schemas"]["ShowBase"] & Record<string, never>;
+        SimplifiedShowObject: components['schemas']['ShowBase'] &
+            Record<string, never>;
         AudiobookBase: {
             /** @description The author(s) for the audiobook. */
-            authors: components["schemas"]["AuthorObject"][];
+            authors: components['schemas']['AuthorObject'][];
             /**
              * @deprecated
              * @description A list of the countries in which the audiobook can be played, identified by their [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code.
              */
             available_markets: string[];
             /** @description The copyright statements of the audiobook. */
-            copyrights: components["schemas"]["CopyrightObject"][];
+            copyrights: components['schemas']['CopyrightObject'][];
             /** @description A description of the audiobook. HTML tags are stripped away from this field, use `html_description` field in case HTML tags are needed. */
             description: string;
             /** @description A description of the audiobook. This field may contain HTML tags. */
@@ -2886,13 +2899,13 @@ export interface components {
             /** @description Whether or not the audiobook has explicit content (true = yes it does; false = no it does not OR unknown). */
             explicit: boolean;
             /** @description External URLs for this audiobook. */
-            external_urls: components["schemas"]["ExternalUrlObject"];
+            external_urls: components['schemas']['ExternalUrlObject'];
             /** @description A link to the Web API endpoint providing full details of the audiobook. */
             href: string;
             /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the audiobook. */
             id: string;
             /** @description The cover art for the audiobook in various sizes, widest first. */
-            images: components["schemas"]["ImageObject"][];
+            images: components['schemas']['ImageObject'][];
             /** @description A list of the languages used in the audiobook, identified by their [ISO 639](https://en.wikipedia.org/wiki/ISO_639) code. */
             languages: string[];
             /** @description The media type of the audiobook. */
@@ -2900,7 +2913,7 @@ export interface components {
             /** @description The name of the audiobook. */
             name: string;
             /** @description The narrator(s) for the audiobook. */
-            narrators: components["schemas"]["NarratorObject"][];
+            narrators: components['schemas']['NarratorObject'][];
             /**
              * @deprecated
              * @description The publisher of the audiobook.
@@ -2910,24 +2923,25 @@ export interface components {
              * @description The object type.
              * @enum {string}
              */
-            type: "audiobook";
+            type: 'audiobook';
             /** @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the audiobook. */
             uri: string;
             /** @description The number of chapters in this audiobook. */
             total_chapters: number;
         };
-        AudiobookObject: components["schemas"]["AudiobookBase"] & {
+        AudiobookObject: components['schemas']['AudiobookBase'] & {
             /** @description The chapters of the audiobook. */
-            chapters: components["schemas"]["PagingSimplifiedChapterObject"];
+            chapters: components['schemas']['PagingSimplifiedChapterObject'];
         };
-        SimplifiedAudiobookObject: components["schemas"]["AudiobookBase"] & Record<string, never>;
+        SimplifiedAudiobookObject: components['schemas']['AudiobookBase'] &
+            Record<string, never>;
         AlbumBase: {
             /**
              * @description The type of the album.
              * @example compilation
              * @enum {string}
              */
-            album_type: "album" | "single" | "compilation";
+            album_type: 'album' | 'single' | 'compilation';
             /**
              * @description The number of tracks in the album.
              * @example 9
@@ -2944,7 +2958,7 @@ export interface components {
              */
             available_markets: string[];
             /** @description Known external URLs for this album. */
-            external_urls: components["schemas"]["ExternalUrlObject"];
+            external_urls: components['schemas']['ExternalUrlObject'];
             /** @description A link to the Web API endpoint providing full details of the album. */
             href: string;
             /**
@@ -2953,7 +2967,7 @@ export interface components {
              */
             id: string;
             /** @description The cover art for the album in various sizes, widest first. */
-            images: components["schemas"]["ImageObject"][];
+            images: components['schemas']['ImageObject'][];
             /** @description The name of the album. In case of an album takedown, the value may be an empty string. */
             name: string;
             /**
@@ -2966,38 +2980,39 @@ export interface components {
              * @example year
              * @enum {string}
              */
-            release_date_precision: "year" | "month" | "day";
+            release_date_precision: 'year' | 'month' | 'day';
             /** @description Included in the response when a content restriction is applied. */
-            restrictions?: components["schemas"]["AlbumRestrictionObject"];
+            restrictions?: components['schemas']['AlbumRestrictionObject'];
             /**
              * @description The object type.
              * @enum {string}
              */
-            type: "album";
+            type: 'album';
             /**
              * @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the album.
              * @example spotify:album:2up3OPMp9Tb4dAKM2erWXQ
              */
             uri: string;
         };
-        SimplifiedAlbumObject: components["schemas"]["AlbumBase"] & {
+        SimplifiedAlbumObject: components['schemas']['AlbumBase'] & {
             /** @description The artists of the album. Each artist object includes a link in `href` to more detailed information about the artist. */
-            artists: components["schemas"]["SimplifiedArtistObject"][];
+            artists: components['schemas']['SimplifiedArtistObject'][];
         };
-        ArtistDiscographyAlbumObject: components["schemas"]["SimplifiedAlbumObject"] & {
+        ArtistDiscographyAlbumObject: components['schemas']['SimplifiedAlbumObject'] & {
             /**
              * @deprecated
              * @description This field describes the relationship between the artist and the album.
              * @example compilation
              * @enum {string}
              */
-            album_group: "album" | "single" | "compilation" | "appears_on";
+            album_group: 'album' | 'single' | 'compilation' | 'appears_on';
         };
-        ChapterObject: components["schemas"]["ChapterBase"] & {
+        ChapterObject: components['schemas']['ChapterBase'] & {
             /** @description The audiobook for which the chapter belongs. */
-            audiobook: components["schemas"]["SimplifiedAudiobookObject"];
+            audiobook: components['schemas']['SimplifiedAudiobookObject'];
         };
-        SimplifiedChapterObject: components["schemas"]["ChapterBase"] & Record<string, never>;
+        SimplifiedChapterObject: components['schemas']['ChapterBase'] &
+            Record<string, never>;
         ChapterBase: {
             /**
              * @deprecated
@@ -3033,7 +3048,7 @@ export interface components {
             /** @description Whether or not the chapter has explicit content (true = yes it does; false = no it does not OR unknown). */
             explicit: boolean;
             /** @description External URLs for this chapter. */
-            external_urls: components["schemas"]["ExternalUrlObject"];
+            external_urls: components['schemas']['ExternalUrlObject'];
             /**
              * @description A link to the Web API endpoint providing full details of the chapter.
              * @example https://api.spotify.com/v1/episodes/5Xt5DXGzch68nYYamXrNxZ
@@ -3045,7 +3060,7 @@ export interface components {
              */
             id: string;
             /** @description The cover art for the chapter in various sizes, widest first. */
-            images: components["schemas"]["ImageObject"][];
+            images: components['schemas']['ImageObject'][];
             /** @description True if the chapter is playable in the given market. Otherwise false. */
             is_playable: boolean;
             /**
@@ -3071,31 +3086,31 @@ export interface components {
              * @example day
              * @enum {string}
              */
-            release_date_precision: "year" | "month" | "day";
+            release_date_precision: 'year' | 'month' | 'day';
             /** @description The user's most recent position in the chapter. Set if the supplied access token is a user token and has the scope 'user-read-playback-position'. */
-            resume_point?: components["schemas"]["ResumePointObject"];
+            resume_point?: components['schemas']['ResumePointObject'];
             /**
              * @description The object type.
              * @enum {string}
              */
-            type: "episode";
+            type: 'episode';
             /**
              * @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the chapter.
              * @example spotify:episode:0zLhl3WsOCQHbe1BPTiHgr
              */
             uri: string;
             /** @description Included in the response when a content restriction is applied. */
-            restrictions?: components["schemas"]["ChapterRestrictionObject"];
+            restrictions?: components['schemas']['ChapterRestrictionObject'];
         };
-        AlbumObject: components["schemas"]["AlbumBase"] & {
+        AlbumObject: components['schemas']['AlbumBase'] & {
             /** @description The artists of the album. Each artist object includes a link in `href` to more detailed information about the artist. */
-            artists: components["schemas"]["SimplifiedArtistObject"][];
+            artists: components['schemas']['SimplifiedArtistObject'][];
             /** @description The tracks of the album. */
-            tracks: components["schemas"]["PagingSimplifiedTrackObject"];
+            tracks: components['schemas']['PagingSimplifiedTrackObject'];
             /** @description The copyright statements of the album. */
-            copyrights: components["schemas"]["CopyrightObject"][];
+            copyrights: components['schemas']['CopyrightObject'][];
             /** @description Known external IDs for the album. */
-            external_ids: components["schemas"]["ExternalIdObject"];
+            external_ids: components['schemas']['ExternalIdObject'];
             /**
              * @deprecated
              * @description **Deprecated** The array is always empty.
@@ -3119,7 +3134,7 @@ export interface components {
             /** @description A link to the Web API endpoint providing full details of the track. */
             href?: string;
             /** @description External URLs for this context. */
-            external_urls?: components["schemas"]["ExternalUrlObject"];
+            external_urls?: components['schemas']['ExternalUrlObject'];
             /** @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the context. */
             uri?: string;
         };
@@ -3189,8 +3204,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    error: components["schemas"]["ErrorObject"];
+                'application/json': {
+                    error: components['schemas']['ErrorObject'];
                 };
             };
         };
@@ -3203,8 +3218,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    error: components["schemas"]["ErrorObject"];
+                'application/json': {
+                    error: components['schemas']['ErrorObject'];
                 };
             };
         };
@@ -3214,8 +3229,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    error: components["schemas"]["ErrorObject"];
+                'application/json': {
+                    error: components['schemas']['ErrorObject'];
                 };
             };
         };
@@ -3225,8 +3240,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    error: components["schemas"]["ErrorObject"];
+                'application/json': {
+                    error: components['schemas']['ErrorObject'];
                 };
             };
         };
@@ -3236,8 +3251,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    error: components["schemas"]["ErrorObject"];
+                'application/json': {
+                    error: components['schemas']['ErrorObject'];
                 };
             };
         };
@@ -3247,8 +3262,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    albums: components["schemas"]["AlbumObject"][];
+                'application/json': {
+                    albums: components['schemas']['AlbumObject'][];
                 };
             };
         };
@@ -3258,8 +3273,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    audiobooks: components["schemas"]["AudiobookObject"][];
+                'application/json': {
+                    audiobooks: components['schemas']['AudiobookObject'][];
                 };
             };
         };
@@ -3269,8 +3284,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    chapters: components["schemas"]["ChapterObject"][];
+                'application/json': {
+                    chapters: components['schemas']['ChapterObject'][];
                 };
             };
         };
@@ -3280,8 +3295,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    devices: components["schemas"]["DeviceObject"][];
+                'application/json': {
+                    devices: components['schemas']['DeviceObject'][];
                 };
             };
         };
@@ -3291,8 +3306,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    albums: components["schemas"]["PagingSimplifiedAlbumObject"];
+                'application/json': {
+                    albums: components['schemas']['PagingSimplifiedAlbumObject'];
                 };
             };
         };
@@ -3302,7 +3317,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingPlaylistObject"];
+                'application/json': components['schemas']['PagingPlaylistObject'];
             };
         };
         /** @description A paged set of playlists */
@@ -3311,7 +3326,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingFeaturedPlaylistObject"];
+                'application/json': components['schemas']['PagingFeaturedPlaylistObject'];
             };
         };
         /** @description A paged set of categories */
@@ -3320,9 +3335,9 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    categories: components["schemas"]["PagingObject"] & {
-                        items?: components["schemas"]["CategoryObject"][];
+                'application/json': {
+                    categories: components['schemas']['PagingObject'] & {
+                        items?: components['schemas']['CategoryObject'][];
                     };
                 };
             };
@@ -3333,8 +3348,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    artists: components["schemas"]["CursorPagingSimplifiedArtistObject"];
+                'application/json': {
+                    artists: components['schemas']['CursorPagingSimplifiedArtistObject'];
                 };
             };
         };
@@ -3344,7 +3359,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["CursorPagingPlayHistoryObject"];
+                'application/json': components['schemas']['CursorPagingPlayHistoryObject'];
             };
         };
         /** @description A set of artists */
@@ -3353,8 +3368,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    artists: components["schemas"]["ArtistObject"][];
+                'application/json': {
+                    artists: components['schemas']['ArtistObject'][];
                 };
             };
         };
@@ -3364,8 +3379,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    audio_features: components["schemas"]["AudioFeaturesObject"][];
+                'application/json': {
+                    audio_features: components['schemas']['AudioFeaturesObject'][];
                 };
             };
         };
@@ -3375,8 +3390,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    episodes: components["schemas"]["EpisodeObject"][];
+                'application/json': {
+                    episodes: components['schemas']['EpisodeObject'][];
                 };
             };
         };
@@ -3386,7 +3401,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
+                'application/json': {
                     /**
                      * @example [
                      *       "alternative",
@@ -3403,7 +3418,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["EpisodeObject"];
+                'application/json': components['schemas']['EpisodeObject'];
             };
         };
         /** @description A Chapter */
@@ -3412,7 +3427,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["ChapterObject"];
+                'application/json': components['schemas']['ChapterObject'];
             };
         };
         /** @description An Audiobook */
@@ -3421,7 +3436,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["AudiobookObject"];
+                'application/json': components['schemas']['AudiobookObject'];
             };
         };
         /** @description An album */
@@ -3430,7 +3445,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["AlbumObject"];
+                'application/json': components['schemas']['AlbumObject'];
             };
         };
         /** @description A set of images */
@@ -3439,7 +3454,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["ImageObject"][];
+                'application/json': components['schemas']['ImageObject'][];
             };
         };
         /** @description A user */
@@ -3448,7 +3463,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PrivateUserObject"];
+                'application/json': components['schemas']['PrivateUserObject'];
             };
         };
         /** @description A user */
@@ -3457,7 +3472,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PublicUserObject"];
+                'application/json': components['schemas']['PublicUserObject'];
             };
         };
         /** @description A track */
@@ -3466,7 +3481,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["TrackObject"];
+                'application/json': components['schemas']['TrackObject'];
             };
         };
         /** @description A show */
@@ -3475,7 +3490,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["ShowObject"];
+                'application/json': components['schemas']['ShowObject'];
             };
         };
         /** @description A category */
@@ -3484,7 +3499,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["CategoryObject"];
+                'application/json': components['schemas']['CategoryObject'];
             };
         };
         /** @description A playlist */
@@ -3493,7 +3508,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PlaylistObject"];
+                'application/json': components['schemas']['PlaylistObject'];
             };
         };
         /** @description Audio features for one track */
@@ -3502,7 +3517,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["AudioFeaturesObject"];
+                'application/json': components['schemas']['AudioFeaturesObject'];
             };
         };
         /** @description Audio analysis for one track */
@@ -3511,7 +3526,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["AudioAnalysisObject"];
+                'application/json': components['schemas']['AudioAnalysisObject'];
             };
         };
         /** @description An artist */
@@ -3520,7 +3535,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["ArtistObject"];
+                'application/json': components['schemas']['ArtistObject'];
             };
         };
         /** @description A set of tracks */
@@ -3529,8 +3544,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    tracks: components["schemas"]["TrackObject"][];
+                'application/json': {
+                    tracks: components['schemas']['TrackObject'][];
                 };
             };
         };
@@ -3540,8 +3555,8 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    shows: components["schemas"]["SimplifiedShowObject"][];
+                'application/json': {
+                    shows: components['schemas']['SimplifiedShowObject'][];
                 };
             };
         };
@@ -3551,7 +3566,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingSimplifiedTrackObject"];
+                'application/json': components['schemas']['PagingSimplifiedTrackObject'];
             };
         };
         /** @description Pages of tracks */
@@ -3560,7 +3575,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingSavedTrackObject"];
+                'application/json': components['schemas']['PagingSavedTrackObject'];
             };
         };
         /** @description Pages of tracks */
@@ -3569,7 +3584,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingPlaylistTrackObject"];
+                'application/json': components['schemas']['PagingPlaylistTrackObject'];
             };
         };
         /** @description Pages of albums */
@@ -3578,7 +3593,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingArtistDiscographyAlbumObject"];
+                'application/json': components['schemas']['PagingArtistDiscographyAlbumObject'];
             };
         };
         /** @description Pages of albums */
@@ -3587,7 +3602,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingSavedAlbumObject"];
+                'application/json': components['schemas']['PagingSavedAlbumObject'];
             };
         };
         /** @description Pages of shows */
@@ -3596,7 +3611,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingSavedShowObject"];
+                'application/json': components['schemas']['PagingSavedShowObject'];
             };
         };
         /** @description Pages of episodes */
@@ -3605,7 +3620,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingSimplifiedEpisodeObject"];
+                'application/json': components['schemas']['PagingSimplifiedEpisodeObject'];
             };
         };
         /** @description Pages of episodes */
@@ -3614,7 +3629,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingSavedEpisodeObject"];
+                'application/json': components['schemas']['PagingSavedEpisodeObject'];
             };
         };
         /** @description Pages of audiobooks */
@@ -3623,7 +3638,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingSimplifiedAudiobookObject"];
+                'application/json': components['schemas']['PagingSimplifiedAudiobookObject'];
             };
         };
         /** @description Pages of chapters */
@@ -3632,7 +3647,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingSimplifiedChapterObject"];
+                'application/json': components['schemas']['PagingSimplifiedChapterObject'];
             };
         };
         /** @description Pages of artists or tracks */
@@ -3641,8 +3656,11 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["PagingObject"] & {
-                    items?: (components["schemas"]["ArtistObject"] | components["schemas"]["TrackObject"])[];
+                'application/json': components['schemas']['PagingObject'] & {
+                    items?: (
+                        | components['schemas']['ArtistObject']
+                        | components['schemas']['TrackObject']
+                    )[];
                 };
             };
         };
@@ -3652,14 +3670,14 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
-                    tracks?: components["schemas"]["PagingTrackObject"];
-                    artists?: components["schemas"]["PagingArtistObject"];
-                    albums?: components["schemas"]["PagingSimplifiedAlbumObject"];
-                    playlists?: components["schemas"]["PagingPlaylistObject"];
-                    shows?: components["schemas"]["PagingSimplifiedShowObject"];
-                    episodes?: components["schemas"]["PagingSimplifiedEpisodeObject"];
-                    audiobooks?: components["schemas"]["PagingSimplifiedAudiobookObject"];
+                'application/json': {
+                    tracks?: components['schemas']['PagingTrackObject'];
+                    artists?: components['schemas']['PagingArtistObject'];
+                    albums?: components['schemas']['PagingSimplifiedAlbumObject'];
+                    playlists?: components['schemas']['PagingPlaylistObject'];
+                    shows?: components['schemas']['PagingSimplifiedShowObject'];
+                    episodes?: components['schemas']['PagingSimplifiedEpisodeObject'];
+                    audiobooks?: components['schemas']['PagingSimplifiedAudiobookObject'];
                 };
             };
         };
@@ -3669,7 +3687,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["RecommendationsObject"];
+                'application/json': components['schemas']['RecommendationsObject'];
             };
         };
         /** @description Array of booleans */
@@ -3678,7 +3696,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": boolean[];
+                'application/json': boolean[];
             };
         };
         /** @description Array of boolean, containing a single boolean */
@@ -3687,7 +3705,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": boolean[];
+                'application/json': boolean[];
             };
         };
         /** @description Information about the queue */
@@ -3696,7 +3714,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["QueueObject"];
+                'application/json': components['schemas']['QueueObject'];
             };
         };
         /** @description Information about playback */
@@ -3705,7 +3723,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["CurrentlyPlayingContextObject"];
+                'application/json': components['schemas']['CurrentlyPlayingContextObject'];
             };
         };
         /** @description Information about the currently playing track */
@@ -3714,7 +3732,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": components["schemas"]["CurrentlyPlayingContextObject"];
+                'application/json': components['schemas']['CurrentlyPlayingContextObject'];
             };
         };
         /** @description A snapshot ID for the playlist */
@@ -3723,7 +3741,7 @@ export interface components {
                 [name: string]: unknown;
             };
             content: {
-                "application/json": {
+                'application/json': {
                     /** @example abc */
                     snapshot_id?: string;
                 };
@@ -3755,30 +3773,30 @@ export interface components {
 }
 export type $defs = Record<string, never>;
 export interface operations {
-    "get-an-album": {
+    'get-an-album': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path: {
-                id: components["parameters"]["PathAlbumId"];
+                id: components['parameters']['PathAlbumId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneAlbum"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneAlbum'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-multiple-albums": {
+    'get-multiple-albums': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryAlbumIds"];
-                market?: components["parameters"]["QueryMarket"];
+                ids: components['parameters']['QueryAlbumIds'];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path?: never;
@@ -3786,51 +3804,51 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManyAlbums"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManyAlbums'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-an-albums-tracks": {
+    'get-an-albums-tracks': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                market?: components['parameters']['QueryMarket'];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path: {
-                id: components["parameters"]["PathAlbumId"];
+                id: components['parameters']['PathAlbumId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingSimplifiedTrackObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingSimplifiedTrackObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-an-artist": {
+    'get-an-artist': {
         parameters: {
             query?: never;
             header?: never;
             path: {
-                id: components["parameters"]["PathArtistId"];
+                id: components['parameters']['PathArtistId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneArtist"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneArtist'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-multiple-artists": {
+    'get-multiple-artists': {
         parameters: {
             query: {
                 ids: string;
@@ -3841,94 +3859,94 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManyArtists"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManyArtists'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-an-artists-albums": {
+    'get-an-artists-albums': {
         parameters: {
             query?: {
-                include_groups?: components["parameters"]["QueryIncludeGroups"];
-                market?: components["parameters"]["QueryMarket"];
+                include_groups?: components['parameters']['QueryIncludeGroups'];
+                market?: components['parameters']['QueryMarket'];
                 limit?: number;
-                offset?: components["parameters"]["QueryOffset"];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path: {
-                id: components["parameters"]["PathArtistId"];
+                id: components['parameters']['PathArtistId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingArtistDiscographyAlbumObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingArtistDiscographyAlbumObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-an-artists-top-tracks": {
+    'get-an-artists-top-tracks': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path: {
-                id: components["parameters"]["PathArtistId"];
+                id: components['parameters']['PathArtistId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManyTracks"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManyTracks'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-an-artists-related-artists": {
+    'get-an-artists-related-artists': {
         parameters: {
             query?: never;
             header?: never;
             path: {
-                id: components["parameters"]["PathArtistId"];
+                id: components['parameters']['PathArtistId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManyArtists"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManyArtists'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-a-show": {
+    'get-a-show': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path: {
-                id: components["parameters"]["PathShowId"];
+                id: components['parameters']['PathShowId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneShow"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneShow'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-multiple-shows": {
+    'get-multiple-shows': {
         parameters: {
             query: {
-                market?: components["parameters"]["QueryMarket"];
-                ids: components["parameters"]["QueryShowIds"];
+                market?: components['parameters']['QueryMarket'];
+                ids: components['parameters']['QueryShowIds'];
             };
             header?: never;
             path?: never;
@@ -3936,37 +3954,37 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManySimplifiedShows"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManySimplifiedShows'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-a-shows-episodes": {
+    'get-a-shows-episodes': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                market?: components['parameters']['QueryMarket'];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path: {
-                id: components["parameters"]["PathShowId"];
+                id: components['parameters']['PathShowId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingSimplifiedEpisodeObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingSimplifiedEpisodeObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-an-episode": {
+    'get-an-episode': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path: {
@@ -3976,17 +3994,17 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneEpisode"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneEpisode'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-multiple-episodes": {
+    'get-multiple-episodes': {
         parameters: {
             query: {
                 ids: string;
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path?: never;
@@ -3994,38 +4012,38 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManyEpisodes"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManyEpisodes'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-an-audiobook": {
+    'get-an-audiobook': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path: {
-                id: components["parameters"]["PathAudiobookId"];
+                id: components['parameters']['PathAudiobookId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneAudiobook"];
-            400: components["responses"]["BadRequest"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            404: components["responses"]["NotFound"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneAudiobook'];
+            400: components['responses']['BadRequest'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            404: components['responses']['NotFound'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-multiple-audiobooks": {
+    'get-multiple-audiobooks': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryAudiobookIds"];
-                market?: components["parameters"]["QueryMarket"];
+                ids: components['parameters']['QueryAudiobookIds'];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path?: never;
@@ -4033,38 +4051,38 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManyAudiobooks"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManyAudiobooks'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-audiobook-chapters": {
+    'get-audiobook-chapters': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                market?: components['parameters']['QueryMarket'];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path: {
-                id: components["parameters"]["PathAudiobookId"];
+                id: components['parameters']['PathAudiobookId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingSimplifiedChapterObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingSimplifiedChapterObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-users-saved-audiobooks": {
+    'get-users-saved-audiobooks': {
         parameters: {
             query?: {
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path?: never;
@@ -4072,16 +4090,16 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingSimplifiedAudiobookObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingSimplifiedAudiobookObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "save-audiobooks-user": {
+    'save-audiobooks-user': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryAudiobookIds"];
+                ids: components['parameters']['QueryAudiobookIds'];
             };
             header?: never;
             path?: never;
@@ -4096,15 +4114,15 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "remove-audiobooks-user": {
+    'remove-audiobooks-user': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryAudiobookIds"];
+                ids: components['parameters']['QueryAudiobookIds'];
             };
             header?: never;
             path?: never;
@@ -4119,15 +4137,15 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "check-users-saved-audiobooks": {
+    'check-users-saved-audiobooks': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryAudiobookIds"];
+                ids: components['parameters']['QueryAudiobookIds'];
             };
             header?: never;
             path?: never;
@@ -4135,36 +4153,36 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ArrayOfBooleans"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ArrayOfBooleans'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-a-chapter": {
+    'get-a-chapter': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path: {
-                id: components["parameters"]["PathChapterId"];
+                id: components['parameters']['PathChapterId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneChapter"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneChapter'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-several-chapters": {
+    'get-several-chapters': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryChapterIds"];
-                market?: components["parameters"]["QueryMarket"];
+                ids: components['parameters']['QueryChapterIds'];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path?: never;
@@ -4172,16 +4190,16 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManyChapters"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManyChapters'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-track": {
+    'get-track': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path: {
@@ -4191,16 +4209,16 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneTrack"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneTrack'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-several-tracks": {
+    'get-several-tracks': {
         parameters: {
             query: {
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
                 ids: string;
             };
             header?: never;
@@ -4209,21 +4227,29 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManyTracks"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManyTracks'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
     search: {
         parameters: {
             query: {
                 q: string;
-                type: ("album" | "artist" | "playlist" | "track" | "show" | "episode" | "audiobook")[];
-                market?: components["parameters"]["QueryMarket"];
+                type: (
+                    | 'album'
+                    | 'artist'
+                    | 'playlist'
+                    | 'track'
+                    | 'show'
+                    | 'episode'
+                    | 'audiobook'
+                )[];
+                market?: components['parameters']['QueryMarket'];
                 limit?: number;
                 offset?: number;
-                include_external?: "audio";
+                include_external?: 'audio';
             };
             header?: never;
             path?: never;
@@ -4231,13 +4257,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["SearchItems"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['SearchItems'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-current-users-profile": {
+    'get-current-users-profile': {
         parameters: {
             query?: never;
             header?: never;
@@ -4246,45 +4272,45 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OnePrivateUser"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OnePrivateUser'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-playlist": {
+    'get-playlist': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
                 fields?: string;
-                additional_types?: components["parameters"]["QueryAdditionalTypes"];
+                additional_types?: components['parameters']['QueryAdditionalTypes'];
             };
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OnePlaylist"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OnePlaylist'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "change-playlist-details": {
+    'change-playlist-details': {
         parameters: {
             query?: never;
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description The new name for the playlist, for example `"My New Playlist Title"` */
                     name?: string;
                     /** @description The playlist's public/private status (if it should be added to the user's profile or not): `true` the playlist will be public, `false` the playlist will be private, `null` the playlist status is not relevant. For more about public/private status, see [Working with Playlists](/documentation/web-api/concepts/playlists) */
@@ -4309,48 +4335,48 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-playlists-tracks": {
+    'get-playlists-tracks': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
                 fields?: string;
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
-                additional_types?: components["parameters"]["QueryAdditionalTypes"];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
+                additional_types?: components['parameters']['QueryAdditionalTypes'];
             };
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingPlaylistTrackObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingPlaylistTrackObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "reorder-or-replace-playlists-tracks": {
+    'reorder-or-replace-playlists-tracks': {
         parameters: {
             query?: {
                 uris?: string;
             };
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     uris?: string[];
                     /** @description The position of the first item to be reordered. */
                     range_start?: number;
@@ -4366,13 +4392,13 @@ export interface operations {
             };
         };
         responses: {
-            200: components["responses"]["PlaylistSnapshotId"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PlaylistSnapshotId'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "add-tracks-to-playlist": {
+    'add-tracks-to-playlist': {
         parameters: {
             query?: {
                 position?: number;
@@ -4380,13 +4406,13 @@ export interface operations {
             };
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description A JSON array of the [Spotify URIs](/documentation/web-api/concepts/spotify-uris-ids) to add. For example: `{"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh","spotify:track:1301WleyT98MSxVHPZCA6M", "spotify:episode:512ojhOuo1ktJprKbVcKyQ"]}`<br/>A maximum of 100 items can be added in one request. _**Note**: if the `uris` parameter is present in the query string, any URIs listed here in the body will be ignored._ */
                     uris?: string[];
                     /** @description The position to insert the items, a zero-based index. For example, to insert the items in the first position: `position=0` ; to insert the items in the third position: `position=2`. If omitted, the items will be appended to the playlist. Items are added in the order they appear in the uris array. For example: `{"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh","spotify:track:1301WleyT98MSxVHPZCA6M"], "position": 3}` */
@@ -4397,24 +4423,24 @@ export interface operations {
             };
         };
         responses: {
-            201: components["responses"]["PlaylistSnapshotId"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            201: components['responses']['PlaylistSnapshotId'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "remove-tracks-playlist": {
+    'remove-tracks-playlist': {
         parameters: {
             query?: never;
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /**
                      * @description An array of objects containing [Spotify URIs](/documentation/web-api/concepts/spotify-uris-ids) of the tracks or episodes to remove.
                      *     For example: `{ "tracks": [{ "uri": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh" },{ "uri": "spotify:track:1301WleyT98MSxVHPZCA6M" }] }`. A maximum of 100 objects can be sent at once.
@@ -4433,49 +4459,49 @@ export interface operations {
             };
         };
         responses: {
-            200: components["responses"]["PlaylistSnapshotId"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PlaylistSnapshotId'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-playlists-items": {
+    'get-playlists-items': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
                 fields?: string;
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
-                additional_types?: components["parameters"]["QueryAdditionalTypes"];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
+                additional_types?: components['parameters']['QueryAdditionalTypes'];
             };
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingPlaylistTrackObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingPlaylistTrackObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "reorder-or-replace-playlists-items": {
+    'reorder-or-replace-playlists-items': {
         parameters: {
             query?: {
                 uris?: string;
             };
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     uris?: string[];
                     /** @description The position of the first item to be reordered. */
                     range_start?: number;
@@ -4491,13 +4517,13 @@ export interface operations {
             };
         };
         responses: {
-            200: components["responses"]["PlaylistSnapshotId"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PlaylistSnapshotId'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "add-items-to-playlist": {
+    'add-items-to-playlist': {
         parameters: {
             query?: {
                 position?: number;
@@ -4505,13 +4531,13 @@ export interface operations {
             };
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description A JSON array of the [Spotify URIs](/documentation/web-api/concepts/spotify-uris-ids) to add. For example: `{"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh","spotify:track:1301WleyT98MSxVHPZCA6M", "spotify:episode:512ojhOuo1ktJprKbVcKyQ"]}`<br/>A maximum of 100 items can be added in one request. _**Note**: if the `uris` parameter is present in the query string, any URIs listed here in the body will be ignored._ */
                     uris?: string[];
                     /** @description The position to insert the items, a zero-based index. For example, to insert the items in the first position: `position=0` ; to insert the items in the third position: `position=2`. If omitted, the items will be appended to the playlist. Items are added in the order they appear in the uris array. For example: `{"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh","spotify:track:1301WleyT98MSxVHPZCA6M"], "position": 3}` */
@@ -4522,24 +4548,24 @@ export interface operations {
             };
         };
         responses: {
-            201: components["responses"]["PlaylistSnapshotId"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            201: components['responses']['PlaylistSnapshotId'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "remove-items-playlist": {
+    'remove-items-playlist': {
         parameters: {
             query?: never;
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /**
                      * @description An array of objects containing [Spotify URIs](/documentation/web-api/concepts/spotify-uris-ids) of the tracks or episodes to remove.
                      *     For example: `{ "items": [{ "uri": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh" },{ "uri": "spotify:track:1301WleyT98MSxVHPZCA6M" }] }`. A maximum of 100 objects can be sent at once.
@@ -4558,16 +4584,16 @@ export interface operations {
             };
         };
         responses: {
-            200: components["responses"]["PlaylistSnapshotId"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PlaylistSnapshotId'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-a-list-of-current-users-playlists": {
+    'get-a-list-of-current-users-playlists': {
         parameters: {
             query?: {
-                limit?: components["parameters"]["QueryLimit"];
+                limit?: components['parameters']['QueryLimit'];
                 offset?: number;
             };
             header?: never;
@@ -4576,13 +4602,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagedPlaylists"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagedPlaylists'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "create-playlist": {
+    'create-playlist': {
         parameters: {
             query?: never;
             header?: never;
@@ -4591,7 +4617,7 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description The name for the new playlist, for example `"Your Coolest Playlist"`. This name does not need to be unique; a user may have several playlists with the same name. */
                     name: string;
                     /** @description Defaults to `true`. The playlist's public/private status (if it should be added to the user's profile or not): `true` the playlist will be public, `false` the playlist will be private. To be able to create private playlists, the user must have granted the `playlist-modify-private` [scope](/documentation/web-api/concepts/scopes/#list-of-scopes). For more about public/private status, see [Working with Playlists](/documentation/web-api/concepts/playlists) */
@@ -4606,13 +4632,13 @@ export interface operations {
             };
         };
         responses: {
-            201: components["responses"]["OnePlaylist"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            201: components['responses']['OnePlaylist'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "save-library-items": {
+    'save-library-items': {
         parameters: {
             query: {
                 uris: string;
@@ -4636,15 +4662,15 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["ErrorObject"];
+                    'application/json': components['schemas']['ErrorObject'];
                 };
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "remove-library-items": {
+    'remove-library-items': {
         parameters: {
             query: {
                 uris: string;
@@ -4668,15 +4694,15 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["ErrorObject"];
+                    'application/json': components['schemas']['ErrorObject'];
                 };
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "check-library-contains": {
+    'check-library-contains': {
         parameters: {
             query: {
                 uris: string;
@@ -4687,27 +4713,27 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ArrayOfBooleans"];
+            200: components['responses']['ArrayOfBooleans'];
             /** @description Bad Request. Possible reasons: missing `uris` parameter, invalid URI format, unsupported URI type, or more than 40 URIs provided. */
             400: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["ErrorObject"];
+                    'application/json': components['schemas']['ErrorObject'];
                 };
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-users-saved-albums": {
+    'get-users-saved-albums': {
         parameters: {
             query?: {
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
-                market?: components["parameters"]["QueryMarket"];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path?: never;
@@ -4715,16 +4741,16 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingSavedAlbumObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingSavedAlbumObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "save-albums-user": {
+    'save-albums-user': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryAlbumIds"];
+                ids: components['parameters']['QueryAlbumIds'];
             };
             header?: never;
             path?: never;
@@ -4732,7 +4758,7 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). For example: `["4iV5W9uYEdYUVa79Axb7Rh", "1301WleyT98MSxVHPZCA6M"]`<br/>A maximum of 50 items can be specified in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
                     ids?: string[];
                 } & {
@@ -4748,15 +4774,15 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "remove-albums-user": {
+    'remove-albums-user': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryAlbumIds"];
+                ids: components['parameters']['QueryAlbumIds'];
             };
             header?: never;
             path?: never;
@@ -4764,7 +4790,7 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). For example: `["4iV5W9uYEdYUVa79Axb7Rh", "1301WleyT98MSxVHPZCA6M"]`<br/>A maximum of 50 items can be specified in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
                     ids?: string[];
                 } & {
@@ -4780,15 +4806,15 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "check-users-saved-albums": {
+    'check-users-saved-albums': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryAlbumIds"];
+                ids: components['parameters']['QueryAlbumIds'];
             };
             header?: never;
             path?: never;
@@ -4796,18 +4822,18 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ArrayOfBooleans"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ArrayOfBooleans'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-users-saved-tracks": {
+    'get-users-saved-tracks': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                market?: components['parameters']['QueryMarket'];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path?: never;
@@ -4815,13 +4841,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingSavedTrackObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingSavedTrackObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "save-tracks-user": {
+    'save-tracks-user': {
         parameters: {
             query?: never;
             header?: never;
@@ -4830,7 +4856,7 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). For example: `["4iV5W9uYEdYUVa79Axb7Rh", "1301WleyT98MSxVHPZCA6M"]`<br/>A maximum of 50 items can be specified in one request. _**Note**: if the `timestamped_ids` is present in the body, any IDs listed in the query parameters (deprecated) or the `ids` field in the body will be ignored._ */
                     ids?: string[];
                     /** @description A JSON array of objects containing track IDs with their corresponding timestamps. Each object must include a track ID and an `added_at` timestamp. This allows you to specify when tracks were added to maintain a specific chronological order in the user's library.<br/>A maximum of 50 items can be specified in one request. _**Note**: if the `timestamped_ids` is present in the body, any IDs listed in the query parameters (deprecated) or the `ids` field in the body will be ignored._ */
@@ -4856,15 +4882,15 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "remove-tracks-user": {
+    'remove-tracks-user': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryTrackIds"];
+                ids: components['parameters']['QueryTrackIds'];
             };
             header?: never;
             path?: never;
@@ -4872,7 +4898,7 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). For example: `["4iV5W9uYEdYUVa79Axb7Rh", "1301WleyT98MSxVHPZCA6M"]`<br/>A maximum of 50 items can be specified in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
                     ids?: string[];
                 } & {
@@ -4888,15 +4914,15 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "check-users-saved-tracks": {
+    'check-users-saved-tracks': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryTrackIds"];
+                ids: components['parameters']['QueryTrackIds'];
             };
             header?: never;
             path?: never;
@@ -4904,18 +4930,18 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ArrayOfBooleans"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ArrayOfBooleans'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-users-saved-episodes": {
+    'get-users-saved-episodes': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                market?: components['parameters']['QueryMarket'];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path?: never;
@@ -4923,13 +4949,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingSavedEpisodeObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingSavedEpisodeObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "save-episodes-user": {
+    'save-episodes-user': {
         parameters: {
             query: {
                 ids: string;
@@ -4940,7 +4966,7 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). <br/>A maximum of 50 items can be specified in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
                     ids?: string[];
                 } & {
@@ -4956,15 +4982,15 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "remove-episodes-user": {
+    'remove-episodes-user': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryTrackIds"];
+                ids: components['parameters']['QueryTrackIds'];
             };
             header?: never;
             path?: never;
@@ -4972,7 +4998,7 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). <br/>A maximum of 50 items can be specified in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
                     ids?: string[];
                 } & {
@@ -4988,12 +5014,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "check-users-saved-episodes": {
+    'check-users-saved-episodes': {
         parameters: {
             query: {
                 ids: string;
@@ -5004,17 +5030,17 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ArrayOfBooleans"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ArrayOfBooleans'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-users-saved-shows": {
+    'get-users-saved-shows': {
         parameters: {
             query?: {
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path?: never;
@@ -5022,16 +5048,16 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingSavedShowObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingSavedShowObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "save-shows-user": {
+    'save-shows-user': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryShowIds"];
+                ids: components['parameters']['QueryShowIds'];
             };
             header?: never;
             path?: never;
@@ -5046,16 +5072,16 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "remove-shows-user": {
+    'remove-shows-user': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryShowIds"];
-                market?: components["parameters"]["QueryMarket"];
+                ids: components['parameters']['QueryShowIds'];
+                market?: components['parameters']['QueryMarket'];
             };
             header?: never;
             path?: never;
@@ -5070,15 +5096,15 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "check-users-saved-shows": {
+    'check-users-saved-shows': {
         parameters: {
             query: {
-                ids: components["parameters"]["QueryShowIds"];
+                ids: components['parameters']['QueryShowIds'];
             };
             header?: never;
             path?: never;
@@ -5086,82 +5112,82 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ArrayOfBooleans"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ArrayOfBooleans'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-users-top-artists-and-tracks": {
+    'get-users-top-artists-and-tracks': {
         parameters: {
             query?: {
                 time_range?: string;
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path: {
-                type: "artists" | "tracks";
+                type: 'artists' | 'tracks';
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagingArtistOrTrackObject"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagingArtistOrTrackObject'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-users-profile": {
+    'get-users-profile': {
         parameters: {
             query?: never;
             header?: never;
             path: {
-                user_id: components["parameters"]["PathUserId"];
+                user_id: components['parameters']['PathUserId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OnePublicUser"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OnePublicUser'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-list-users-playlists": {
+    'get-list-users-playlists': {
         parameters: {
             query?: {
-                limit?: components["parameters"]["QueryLimit"];
+                limit?: components['parameters']['QueryLimit'];
                 offset?: number;
             };
             header?: never;
             path: {
-                user_id: components["parameters"]["PathUserId"];
+                user_id: components['parameters']['PathUserId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagedPlaylists"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagedPlaylists'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "create-playlist-for-user": {
+    'create-playlist-for-user': {
         parameters: {
             query?: never;
             header?: never;
             path: {
-                user_id: components["parameters"]["PathUserId"];
+                user_id: components['parameters']['PathUserId'];
             };
             cookie?: never;
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description The name for the new playlist, for example `"Your Coolest Playlist"`. This name does not need to be unique; a user may have several playlists with the same name. */
                     name: string;
                     /** @description Defaults to `true`. The playlist's public/private status (if it should be added to the user's profile or not): `true` the playlist will be public, `false` the playlist will be private. To be able to create private playlists, the user must have granted the `playlist-modify-private` [scope](/documentation/web-api/concepts/scopes/#list-of-scopes). For more about public/private status, see [Working with Playlists](/documentation/web-api/concepts/playlists) */
@@ -5176,24 +5202,24 @@ export interface operations {
             };
         };
         responses: {
-            201: components["responses"]["OnePlaylist"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            201: components['responses']['OnePlaylist'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "follow-playlist": {
+    'follow-playlist': {
         parameters: {
             query?: never;
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description Defaults to `true`. If `true` the playlist will be included in user's public playlists (added to profile), if `false` it will remain private. For more about public/private status, see [Working with Playlists](/documentation/web-api/concepts/playlists) */
                     public?: boolean;
                 } & {
@@ -5209,17 +5235,17 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "unfollow-playlist": {
+    'unfollow-playlist': {
         parameters: {
             query?: never;
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
@@ -5232,17 +5258,17 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-featured-playlists": {
+    'get-featured-playlists': {
         parameters: {
             query?: {
                 locale?: string;
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path?: never;
@@ -5250,18 +5276,18 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagedFeaturedPlaylists"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagedFeaturedPlaylists'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-categories": {
+    'get-categories': {
         parameters: {
             query?: {
                 locale?: string;
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path?: never;
@@ -5269,13 +5295,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagedCategories"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagedCategories'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-a-category": {
+    'get-a-category': {
         parameters: {
             query?: {
                 locale?: string;
@@ -5288,17 +5314,17 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneCategory"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneCategory'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-a-categories-playlists": {
+    'get-a-categories-playlists': {
         parameters: {
             query?: {
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path: {
@@ -5308,41 +5334,41 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagedFeaturedPlaylists"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagedFeaturedPlaylists'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-playlist-cover": {
+    'get-playlist-cover': {
         parameters: {
             query?: never;
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ArrayOfImages"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ArrayOfImages'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "upload-custom-playlist-cover": {
+    'upload-custom-playlist-cover': {
         parameters: {
             query?: never;
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: {
             content: {
-                "image/jpeg": string;
+                'image/jpeg': string;
             };
         };
         responses: {
@@ -5353,16 +5379,16 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-new-releases": {
+    'get-new-releases': {
         parameters: {
             query?: {
-                limit?: components["parameters"]["QueryLimit"];
-                offset?: components["parameters"]["QueryOffset"];
+                limit?: components['parameters']['QueryLimit'];
+                offset?: components['parameters']['QueryOffset'];
             };
             header?: never;
             path?: never;
@@ -5370,16 +5396,16 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["PagedAlbums"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['PagedAlbums'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-followed": {
+    'get-followed': {
         parameters: {
             query: {
-                type: "artist";
+                type: 'artist';
                 after?: string;
                 limit?: number;
             };
@@ -5389,16 +5415,16 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["CursorPagedArtists"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['CursorPagedArtists'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "follow-artists-users": {
+    'follow-artists-users': {
         parameters: {
             query: {
-                type: "artist" | "user";
+                type: 'artist' | 'user';
                 ids: string;
             };
             header?: never;
@@ -5407,7 +5433,7 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /**
                      * @description A JSON array of the artist or user [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids).
                      *     For example: `{ids:["74ASZWbe4lXaubB36ztrGX", "08td7MxkoHQkXnWAYD8d6Q"]}`. A maximum of 50 IDs can be sent in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._
@@ -5426,15 +5452,15 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "unfollow-artists-users": {
+    'unfollow-artists-users': {
         parameters: {
             query: {
-                type: "artist" | "user";
+                type: 'artist' | 'user';
                 ids: string;
             };
             header?: never;
@@ -5443,7 +5469,7 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description A JSON array of the artist or user [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). For example: `{ids:["74ASZWbe4lXaubB36ztrGX", "08td7MxkoHQkXnWAYD8d6Q"]}`. A maximum of 50 IDs can be sent in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
                     ids?: string[];
                 } & {
@@ -5459,15 +5485,15 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "check-current-user-follows": {
+    'check-current-user-follows': {
         parameters: {
             query: {
-                type: "artist" | "user";
+                type: 'artist' | 'user';
                 ids: string;
             };
             header?: never;
@@ -5476,32 +5502,32 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ArrayOfBooleans"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ArrayOfBooleans'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "check-if-user-follows-playlist": {
+    'check-if-user-follows-playlist': {
         parameters: {
             query?: {
                 ids?: string;
             };
             header?: never;
             path: {
-                playlist_id: components["parameters"]["PathPlaylistId"];
+                playlist_id: components['parameters']['PathPlaylistId'];
             };
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["SingletonArrayOfBoolean"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['SingletonArrayOfBoolean'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-several-audio-features": {
+    'get-several-audio-features': {
         parameters: {
             query: {
                 ids: string;
@@ -5512,13 +5538,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManyAudioFeatures"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManyAudioFeatures'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-audio-features": {
+    'get-audio-features': {
         parameters: {
             query?: never;
             header?: never;
@@ -5529,13 +5555,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneAudioFeatures"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneAudioFeatures'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-audio-analysis": {
+    'get-audio-analysis': {
         parameters: {
             query?: never;
             header?: never;
@@ -5546,17 +5572,17 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneAudioAnalysis"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneAudioAnalysis'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-recommendations": {
+    'get-recommendations': {
         parameters: {
             query: {
                 limit?: number;
-                market?: components["parameters"]["QueryMarket"];
+                market?: components['parameters']['QueryMarket'];
                 seed_artists: string;
                 seed_genres: string;
                 seed_tracks: string;
@@ -5609,13 +5635,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneRecommendations"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneRecommendations'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-recommendation-genres": {
+    'get-recommendation-genres': {
         parameters: {
             query?: never;
             header?: never;
@@ -5624,17 +5650,17 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManyGenres"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManyGenres'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-information-about-the-users-current-playback": {
+    'get-information-about-the-users-current-playback': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
-                additional_types?: components["parameters"]["QueryAdditionalTypes"];
+                market?: components['parameters']['QueryMarket'];
+                additional_types?: components['parameters']['QueryAdditionalTypes'];
             };
             header?: never;
             path?: never;
@@ -5642,7 +5668,7 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneCurrentlyPlaying"];
+            200: components['responses']['OneCurrentlyPlaying'];
             /** @description Playback not available or active */
             204: {
                 headers: {
@@ -5650,12 +5676,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "transfer-a-users-playback": {
+    'transfer-a-users-playback': {
         parameters: {
             query?: never;
             header?: never;
@@ -5664,7 +5690,7 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /** @description A JSON array containing the ID of the device on which playback should be started/transferred.<br/>For example:`{device_ids:["74ASZWbe4lXaubB36ztrGX"]}`<br/>_**Note**: Although an array is accepted, only a single device_id is currently supported. Supplying more than one will return `400 Bad Request`_ */
                     device_ids: string[];
                     /** @description **true**: ensure playback happens on new device.<br/>**false** or not provided: keep the current playback state. */
@@ -5682,12 +5708,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-a-users-available-devices": {
+    'get-a-users-available-devices': {
         parameters: {
             query?: never;
             header?: never;
@@ -5696,17 +5722,17 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["ManyDevices"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['ManyDevices'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-the-users-currently-playing-track": {
+    'get-the-users-currently-playing-track': {
         parameters: {
             query?: {
-                market?: components["parameters"]["QueryMarket"];
-                additional_types?: components["parameters"]["QueryAdditionalTypes"];
+                market?: components['parameters']['QueryMarket'];
+                additional_types?: components['parameters']['QueryAdditionalTypes'];
             };
             header?: never;
             path?: never;
@@ -5714,13 +5740,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["OneCurrentlyPlayingTrack"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['OneCurrentlyPlayingTrack'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "start-a-users-playback": {
+    'start-a-users-playback': {
         parameters: {
             query?: {
                 device_id?: string;
@@ -5731,7 +5757,7 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": {
+                'application/json': {
                     /**
                      * @description Optional. Spotify URI of the context to play.
                      *     Valid contexts are albums, artists & playlists.
@@ -5766,12 +5792,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "pause-a-users-playback": {
+    'pause-a-users-playback': {
         parameters: {
             query?: {
                 device_id?: string;
@@ -5789,12 +5815,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "skip-users-playback-to-next-track": {
+    'skip-users-playback-to-next-track': {
         parameters: {
             query?: {
                 device_id?: string;
@@ -5812,12 +5838,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "skip-users-playback-to-previous-track": {
+    'skip-users-playback-to-previous-track': {
         parameters: {
             query?: {
                 device_id?: string;
@@ -5835,12 +5861,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "seek-to-position-in-currently-playing-track": {
+    'seek-to-position-in-currently-playing-track': {
         parameters: {
             query: {
                 position_ms: number;
@@ -5859,12 +5885,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "set-repeat-mode-on-users-playback": {
+    'set-repeat-mode-on-users-playback': {
         parameters: {
             query: {
                 state: string;
@@ -5883,12 +5909,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "set-volume-for-users-playback": {
+    'set-volume-for-users-playback': {
         parameters: {
             query: {
                 volume_percent: number;
@@ -5907,12 +5933,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "toggle-shuffle-for-users-playback": {
+    'toggle-shuffle-for-users-playback': {
         parameters: {
             query: {
                 state: boolean;
@@ -5931,12 +5957,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-recently-played": {
+    'get-recently-played': {
         parameters: {
             query?: {
                 limit?: number;
@@ -5949,13 +5975,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["CursorPagedPlayHistory"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['CursorPagedPlayHistory'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-queue": {
+    'get-queue': {
         parameters: {
             query?: never;
             header?: never;
@@ -5964,13 +5990,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            200: components["responses"]["Queue"];
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            200: components['responses']['Queue'];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "add-to-queue": {
+    'add-to-queue': {
         parameters: {
             query: {
                 uri: string;
@@ -5989,12 +6015,12 @@ export interface operations {
                 };
                 content?: never;
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
-    "get-available-markets": {
+    'get-available-markets': {
         parameters: {
             query?: never;
             header?: never;
@@ -6009,7 +6035,7 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    'application/json': {
                         /**
                          * @example [
                          *       "CA",
@@ -6021,9 +6047,9 @@ export interface operations {
                     };
                 };
             };
-            401: components["responses"]["Unauthorized"];
-            403: components["responses"]["Forbidden"];
-            429: components["responses"]["TooManyRequests"];
+            401: components['responses']['Unauthorized'];
+            403: components['responses']['Forbidden'];
+            429: components['responses']['TooManyRequests'];
         };
     };
 }

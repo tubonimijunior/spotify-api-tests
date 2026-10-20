@@ -1,20 +1,21 @@
 import 'dotenv/config';
 import { authUrl } from './config.ts';
 
-
-
 export async function getToken(): Promise<string> {
-    if (process.env.CLIENTID === undefined || process.env.CLIENTSECRET === undefined) {
+    if (
+        process.env.CLIENTID === undefined ||
+        process.env.CLIENTSECRET === undefined
+    ) {
         throw new Error('client_id or client_secret is undefined');
     }
     const response = await fetch(`${authUrl}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams({
-            'grant_type': 'client_credentials',
+            grant_type: 'client_credentials',
             client_id: process.env.CLIENTID,
-            client_secret: process.env.CLIENTSECRET
-        })
+            client_secret: process.env.CLIENTSECRET,
+        }),
     });
     // const authResponse = await response.json();
     // if (response.status !== 200 || !authResponse.access_token) {
