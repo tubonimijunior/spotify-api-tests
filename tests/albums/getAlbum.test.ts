@@ -30,7 +30,7 @@ beforeAll(async () => {
 });
 
 describe('Get Albums and details', () => {
-    it.only('Should return a 200 and display ablum details', async () => {
+    it('Should return a 200 and display ablum details', async () => {
         const response = await axios.get(`${spotifyUrl}/albums/${album}`, {
             headers: { Authorization: `Bearer ${token}` },
         });
