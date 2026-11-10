@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import 'dotenv/config';
-import { authUrl } from './helpers/config.ts';
+import { authUrl } from '../helpers/config.ts';
 
 const client_id = process.env.CLIENTID;
 const client_secret = process.env.CLIENTSECRET;

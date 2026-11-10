@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeAll } from 'vitest';
-import { getToken } from './helpers/auth.js';
-import { spotifyUrl } from './helpers/config.js';
+import { getToken } from '../helpers/auth.ts';
+import { spotifyUrl } from '../helpers/config.ts';
 import axios from 'axios';
 
 // const artistName = 'Tupac';

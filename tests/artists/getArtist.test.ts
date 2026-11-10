@@ -1,7 +1,7 @@
-import { getToken } from './helpers/auth.ts';
+import { getToken } from '../helpers/auth.ts';
 import { describe, it, expect, beforeAll } from 'vitest';
-import type { components } from './types/spotify.ts';
-import { spotifyUrl } from './helpers/config.ts';
+import type { components } from '../types/spotify.js';
+import { spotifyUrl } from '../helpers/config.ts';
 
 const artistId = '4Z8W4fKeB5YxbusRsdQVPb';
 
