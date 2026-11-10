@@ -36,7 +36,6 @@ describe('Get Albums and details', () => {
         });
         expect(response.status).toBe(200);
         const apiResponse = response.data;
-        console.log(apiResponse);
         expect(apiResponse).toMatchObject(albumDetails);
         const song = apiResponse.tracks.items.map(
             (track: { name: string }) => track.name,
